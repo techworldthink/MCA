@@ -110,14 +110,16 @@
                                 <tr>
                                     <td>6) While declaring an array, we can also assign each element with 0 like this.
 
-                                        <br> <br>Eg: int age[10]={0}; </td>
+                                        <br> <br>Eg: int age[10]={0};
+                                    </td>
                                 </tr>
                                 <tr>
                                     <td>7) There is no need to provide the number of elements while declaring an array,
                                         but we have to provide the values at the time of declaration. In this case,
                                         array size will be the number of values that you have provided.
 
-                                        <br> <br>Eg: int age[]={21,22,25,45,56}; </td>
+                                        <br> <br>Eg: int age[]={21,22,25,45,56};
+                                    </td>
                                 </tr>
                             </tbody>
                         </table>
@@ -455,7 +457,8 @@ main() {
                                 </tr>
                                 <tr>
                                     <td>Parent </td>
-                                    <td>Any node except the root node has one edge upward to a node called parent.The parent of a node is the immediate predecessor of a node. </td>
+                                    <td>Any node except the root node has one edge upward to a node called parent.The
+                                        parent of a node is the immediate predecessor of a node. </td>
                                 </tr>
                                 <tr>
                                     <td>Child </td>
@@ -548,9 +551,74 @@ main() {
                                 </tr>
                             </tbody>
                         </table>
-                    </div>
+                    </div><br><br>
+                    <b class="red r4-h2">LINKED LIST </b><br><br>
 
+                    <p>A linked list is a linear data structure, in which the elements are not stored at contiguous
+                        memory locations. The elements in a linked list are linked using pointers a linked list consists
+                        of nodes where each node contains a data field and a reference(link) to the next node in the
+                        list.
 
+                    </p>
+                    <img src="library/img/ds/Linkedlist.png" class="mx-auto d-block img-fluid"
+                        style="width: 75%;"><br><br>
+                    <b>Points</b><br><br>
+                    <ul>
+                        <li>Linear data structure </li>
+                        <li>Elements are not stored at contiguous memory locations </li>
+                        <li>Elements in a linked list are linked using pointers </li>
+                        <li>Linked list consists of nodes </li>
+                        <li>Each node contains a data field and a reference(link) to the next node in the list </li>
+                        <li>Dynamic size </li>
+                        <li>Ease of insertion/deletion </li>
+                    </ul>
+                    <b>Drawbacks</b><br><br>
+                    <ul>
+                        <li>Random access is not allowed. We have to access elements sequentially starting from the
+                            first node. So we cannot do binary search with linked lists efficiently with its default
+                            implementation </li>
+                        <li>Extra memory space for a pointer is required with each element of the list </li>
+                        <li>Not cache friendly. Since array elements are contiguous locations, there is locality of
+                            reference which is not there in case of linked lists </li>
+
+                    </ul>
+                    <b>Representation of node</b><br><br>
+                    <pre>                    <code>
+    // A linked list node 
+    struct Node { 
+    int data; 
+    struct Node* next; 
+    }; 
+                    </code></pre>
+<br>
+<b>Types</b><br><br>
+<dl>
+    <dt>Simple Linked List  </dt>
+    <dd>Item navigation is forward only </dd>
+    <dt>Doubly Linked List </dt>
+    <dd>Items can be navigated forward and backward </dd>
+    <dt>Circular Linked List </dt>
+    <dd>Last item contains link of the first element as next and the first element has a link to the last element as previous </dd>
+</dl>
+
+<b>Operations</b><br><br>
+<ul>
+    <li>Insertion </li>
+    <ul>
+        <li>at beginning </li>
+        <li>at end </li>
+        <li>at a particular position </li>
+    </ul>
+    <li>Deletion </li>
+    <li>Display </li>
+    <li>Search </li> 
+    <li>Delete </li>
+</ul>
+
+<p class="link">
+    <a href="https://raw.githubusercontent.com/techworldthink/Data_Structure_lab_MCA/main/linked_list_insert_end_first_mid_display_search_opearations.cpp"
+        class="white">Linked List Full Programme</a><br>
+</p>
 
 
 
