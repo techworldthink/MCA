@@ -4,6 +4,7 @@ var init_content3 ="";
 var init_content4 ="";
 var init_content5 ="";
 
+
 var image_s_1 = " <img src='library/img/software/module1/module1/1.1/1.1-";
 var image_e_1 =".jpg' class='mx-auto d-block img-fluid'><br><br>";
 
@@ -18,6 +19,8 @@ var image_e_4 =".jpg' class='mx-auto d-block img-fluid'><br><br>";
 
 var image_s_5 = " <img src='library/img/software/module1/module1/1.5/1.5-";
 var image_e_5 =".jpg' class='mx-auto d-block img-fluid'><br><br>";
+
+
 
 for(i=1;i<=34;i++){
     if(i<10){
