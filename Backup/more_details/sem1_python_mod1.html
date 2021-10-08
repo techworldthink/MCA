@@ -1,0 +1,957 @@
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Python Programing </title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+		integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+	<link href="library/css/style.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+</head>
+
+<body>
+	<button onclick="openNav()" id="myBtn" title="Go to top">
+		<i class="fa fa-align-justify"></i>
+	</button>
+
+	<div id="mySidenav" class="sidenav">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		<a href="../index.html">MAIN</a>
+		<a href="#carouselExampleSlidesOnly">HOME</a>
+		<a href="#module1">Introductions</a>
+		<a href="sem1_python_mod1 notes.html">Notes</a>
+		<a href="https://github.com/techworldthink/Python_lab_MCA">Programmes</a>
+	</div>
+
+	<!-- Use any element to open the sidenav -->
+	<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+
+	<div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+		<div class="carousel-inner">
+			<div class="carousel-item active">
+				<img class="d-block w-100" src="library/img/bg/pthonbg.jpg" alt="First slide">
+			</div>
+		</div>
+	</div>
+
+	<section id="module1">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-lg-12 mt-5">
+
+					<h2 class="text-center">MODULE I</h2>
+					<svg height="50" width="100%">
+						<line x1="0" y1="0" x2="100%" y2="0" style="stroke:rgb(255,0,0);stroke-width:3" />
+					</svg><br>
+
+
+					<!---......................1.................................. -->
+					<b class="blue r4-h2 bg-y" style="text-align: center;display: block;">Python Quickstart </b><br><br>
+					<div class="table-responsive">
+						<table class="mx-auto">
+							<tbody>
+								<tr>
+									<th>Function </th>
+									<th>Use </th>
+								</tr>
+								<tr>
+									<td><code>print("Hello, World!")</code> </td>
+									<td>To display a Message </td>
+								</tr>
+								<td><code>C:\Users\Your Name>python myfile.py</code> </td>
+								<td>Running python file in the Command Line</td>
+								<tr>
+
+								<tr>
+									<td><code>x = 5<br>
+                                        y = "Hello, World!"<br>
+					a,b = 10,"john"</code> </td>
+									<td>Assigning value to vaiable</td>
+								</tr>
+								<tr>
+									<td>Python
+										Indentation<br><code>if 5 > 2:<br>&nbsp;&nbsp;&nbsp;print("Five is greater than two!")</code>
+									</td>
+									<td>Spaces at the beginning of a code line.<br>Python uses indentation to indicate a
+										block of code.</td>
+								</tr>
+								<tr>
+									<td><code>#This is a comment</code> </td>
+									<td>comment</td>
+								</tr>
+								<tr>
+									<td><code>"""
+                                        This is a comment
+                                        written in
+                                        more than just one line
+                                        """</code> </td>
+									<td>multi line comment</td>
+								</tr>
+
+							</tbody>
+						</table>
+
+					</div><br><br>
+					<!---................................1............................... -->
+					<h3><b>Python input() Function</b></h3>
+					<p>The input() function allows user input</p>
+					<table align="center">
+						<tr>
+							<th><b>Syntax</b></td>
+							</th>
+							<td><code>input(prompt)</code></td>
+						</tr>
+						<tr>
+							<th>Example</td>
+							</th>
+							<td><code>x = input('Enter your name:')<br>print('Hello, ' + x)</code></td>
+						</tr>
+						<tr>
+							<th>Output</th>
+							<td>Hello Me</td>
+						</tr>
+					</table>
+					<br><br>
+
+					<h3><b>Python output() Function</b></h3>
+					<p>We use the print() function to output data to the standard output device (screen).</p>
+					<table align="center">
+						<tr>
+							<th><b>Syntax</b></td>
+							</th>
+							<td><code>print(prompt)</code></td>
+						</tr>
+						<tr>
+							<th>Example</td>
+							</th>
+							<td><code>print(1, 2, 3, 4)<br>print(1, 2, 3, 4, sep='*')<br>print(1, 2, 3, 4, sep='#', end='&')</code>
+							</td>
+						</tr>
+						<tr>
+							<th>Output</th>
+							<td>1 2 3 4<br>1*2*3*4<br>1#2#3#4&</td>
+						</tr>
+					</table>
+					<br>
+					<h4><b>Output formatting</b></h4><br>
+					<p>Sometimes we would like to format our output to make it look attractive. This can be done by
+						using the str.format() method. This method is visible to any string object.</p>
+					<code>
+	>>> print('I love {0} and {1}'.format('bread','butter'))<br>
+	>>> print('I love {1} and {0}'.format('bread','butter'))
+	</code>
+					<br><br>
+					<p><b>OUTPUT:</b><br>I love bread and butter<br>I love butter and bread</p>
+					<br>
+
+					<h3><b>Python Import</b></h3>
+					<p>When our program grows bigger, it is a good idea to break it into different modules.<br>
+
+						A module is a file containing Python definitions and statements. Python modules have a filename
+						and end with the extension .py.<br>
+
+						Definitions inside a module can be imported to another module or the interactive interpreter in
+						Python. We use the import keyword to do this.</p>
+					<table align="center">
+						<tr>
+							<th>Example</td>
+							</th>
+							<td><code>1)import math<br>&nbsp;&nbsp;print(math.pi)<br><br>2)>>> from math import pi<br>&nbsp;&nbsp;>>> pi</code>
+							</td>
+						</tr>
+						<tr>
+							<th>Output</th>
+							<td>3.141592653589793</td>
+						</tr>
+					</table><br>
+					<p>We can also add our own location to this list.</p>
+					<br>
+
+
+					<h2><b>Operators </b></h2>
+					<p>Types of Operators Python language supports the following types of operators.</p>
+					<ol>
+						<li> Arithmetic Operators </li>
+						<li> Comparison (Relational) Operators </li>
+						<li> Logical Operators </li>
+						<li> Bitwise Operators </li>
+						<li> Membership Operators </li>
+						<li> Identity Operators </li>
+					</ol>
+					<h4><b>Arithmetic Operators</b></h4><br>
+					<table align="center">
+						<tr>
+							<th> Operator</th>
+							<th> Description</th>
+							<th> Example</th>
+						</tr>
+						<tr>
+							<td>+ Addition</td>
+							<td>Adds values on either side of the operator. </td>
+							<td>a + b</td>
+						</tr>
+						<tr>
+							<td>- Subtraction</td>
+							<td>Subtracts right hand operand from left hand operand.</td>
+							<td>a-b</td>
+						</tr>
+						<tr>
+							<td>* Multiplicatio</td>
+							<td>Multiplies values on either side of the operator</td>
+							<td>a * b</td>
+						</tr>
+						<tr>
+							<td>/ Division</td>
+							<td>Divides left hand operand by right hand operand </td>
+							<td>b / a</td>
+						</tr>
+						<tr>
+							<td>% Modulus </td>
+							<td>Divides left hand operand by right hand operand and returns remainder </td>
+							<td>b % a </td>
+						</tr>
+						<tr>
+							<td>//</td>
+							<td>Floor Division - The division of operands where the result is the quotient in which the
+								digits after the decimal point are removed. </td>
+							<td>9//2 = 4</td>
+						</tr>
+					</table><br>
+					<h4>Comparison Operators</h4><br>
+					<table align=center>
+						<tr>
+							<th> Operator</th>
+							<th> Description</th>
+							<th> Example</th>
+						</tr>
+						<tr>
+							<td>==</td>
+							<td>If the values of two operands are equal, then the condition becomes true. </td>
+							<td>(a == b) </td>
+						</tr>
+						<tr>
+							<td>!=</td>
+							<td>If values of two operands are not equal, then condition becomes true. </td>
+							<td>(a != b)</td>
+						</tr>
+						<tr>
+							<td>
+								<>
+							</td>
+							<td>If values of two operands are not equal, then condition becomes true. </td>
+							<td>(a <> b) is true. This is similar to != operator. </td>
+						</tr>
+						<tr>
+							<td>></td>
+							<td>If the value of left operand is greater than the value of right operand, then condition
+								becomes true. </td>
+							<td>(a>b)</td>
+						</tr>
+						<tr>
+							<td>
+								<< </td>
+							<td>If the value of left operand is less than the value of right operand, then condition
+								becomes true. </td>
+							<td>(a < b) </td>
+						</tr>
+						<tr>
+							<td>>=</td>
+							<td>If the value of left operand is greater than or equal to the value of right operand,
+								then condition becomes true. </td>
+							<td>(a >= b)</td>
+						</tr>
+						<tr>
+							<td>
+								<= </td>
+							<td>If the value of left operand is less than or equal to the value of right operand, then
+								condition becomes true. </td>
+							<td>(a <= b)</td>
+						</tr>
+					</table><br>
+					<h4>Assignment Operators</h4><br>
+					<table align=center>
+						<tr>
+							<th> Operator</th>
+							<th> Description</th>
+							<th> Example</th>
+						</tr>
+						<tr>
+							<td>=</td>
+							<td>Assigns values from right side operands to left side operand </td>
+							<td>c = a + b</td>
+						</tr>
+						<tr>
+							<td>+= </td>
+							<td>It adds right operand to the left operand and assign the result to left operand</td>
+							<td>c+=a</td>
+						</tr>
+						<tr>
+							<td>-= </td>
+							<td>It subtracts right operand from the left operand and assign the result to left operand
+							</td>
+							<td>c -= a </td>
+						</tr>
+						<tr>
+							<td>*= </td>
+							<td>It multiplies right operand with the left operand and assign the result to left operand
+							</td>
+							<td>c*=a</td>
+						</tr>
+						<tr>
+							<td>/= </td>
+							<td>It divides left operand with the right operand and assign the result to left operand
+							</td>
+							<td>c/=a</td>
+						</tr>
+						<tr>
+							<td>%= </td>
+							<td>It takes modulus using two operands and assign the result to left operand </td>
+							<td>c%=a</td>
+						</tr>
+						<tr>
+							<td>**= </td>
+							<td>Performs exponential (power) calculation on operators and assign value to the left
+								operand </td>
+							<td>c**=a</td>
+						</tr>
+					</table><br>
+					<h4>Bitwise Operators</h4>
+					<p>Bitwise operator works on bits and performs bit by bit operation. Assume if a = 60; and b = 13;
+					</p><br>
+					<div class="table-responsive">
+						<table class="mx-auto">
+						<tr>
+							<th> Operator</th>
+							<th> Description</th>
+							<th> Example</th>
+						</tr>
+						<tr>
+							<td>&</td>
+							<td>Binary AND
+								Operator copies a bit to the result if it exists in both operands. </td>
+							<td>(a&b)=12<br>(means 00001100)</td>
+						</tr>
+						<tr>
+							<td>|</td>
+							<td> Binary OR
+								It copies a bit if it exists in either operand. </td>
+							<td>(a | b) = 61 <br> (means 0011 1101) </td>
+						</tr>
+						<tr>
+							<td>^ </td>
+							<td>Binary XOR- It copies the bit if it is set in one operand but not both. </td>
+							<td>(a ^ b) = 49 <br>(means 0011 0001) </td>
+						</tr>
+						<tr>
+							<td>~</td>
+							<td>Binary Ones Complement- It is unary and has the effect of 'flipping' bits. </td>
+							<td>(~a ) = -61 <br>(means 1100 0011 in 2's complement form due to a signed binary number.
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<<< </td>
+							<td>Binary Left Shift- The left operands value is moved left by the number of bits specified
+								by the right operand. </td>
+							<td>a << 2=240 <br> (means 1111 0000) </td>
+						</tr>
+						<tr>
+							<td>>> </td>
+							<td>Binary Right Shift- The left operands value is moved right by the number of bits
+								specified by the right operand. </td>
+							<td>a >> 2 = 15 <br> (means 0000 1111) </td>
+						</tr>
+					</table>
+					</div>
+					<br>
+					<h4>Logical Operators</h4><br>
+					<table align=center>
+						<tr>
+							<th> Operator</th>
+							<th> Description</th>
+							<th> Example</th>
+						</tr>
+						<tr>
+							<td>and </td>
+							<td>Logical AND-
+								If both the operands are true then condition becomes true. </td>
+							<td>(a and b)</td>
+						</tr>
+						<tr>
+							<td>or </td>
+							<td>Logical OR -If any of the two operands are non-zero then condition becomes true. </td>
+							<td>(a or b)</td>
+						</tr>
+						<tr>
+							<td>not </td>
+							<td>Logical NOT -
+								Used to reverse the logical state of its operand. </td>
+							<td>not(a and b)</td>
+						</tr>
+					</table><br>
+					<h4>Membership Operators</h4><br>
+					<table align=center>
+						<tr>
+							<th> Operator</th>
+							<th> Description</th>
+							<th> Example</th>
+						</tr>
+						<tr>
+							<td>in</td>
+							<td>Evaluates to true if it finds a variable in the specified sequence and false otherwise.
+							</td>
+							<td>x in y, here in results in a 1 if x is a member of sequence y. </td>
+						</tr>
+						<tr>
+							<td>not in</td>
+							<td>Evaluates to true if it does not finds a variable in the specified sequence and false
+								otherwise. </td>
+							<td>x not in y, here not in results in a 1 if x is not a member of sequence y. </td>
+						</tr>
+					</table><br>
+					<h4>Identity Operators</h4><br>
+					<table align=center>
+						<tr>
+							<th> Operator</th>
+							<th> Description</th>
+							<th> Example</th>
+						</tr>
+						<tr>
+							<td>is</td>
+							<td>Evaluates to true if the variables on either side of the operator point to the same
+								object and false otherwise. </td>
+							<td>x is y, here is results in 1 if id(x) equals id(y). </td>
+						</tr>
+						<tr>
+							<td>is not</td>
+							<td>Evaluates to false if the variables on either side of the operator point to the same
+								object and true otherwise. </td>
+							<td>x is not y, here is not results in 1 if id(x) is not equal to id(y). </td>
+						</tr>
+					</table>
+					<br><br>
+
+					<h2><b>Python Data Types</b></h2>
+					<p>The data stored in memory can be of many types. For example, a person's age is stored as a
+						numeric value and his or her address is stored as alphanumeric characters. Python has various
+						standard data types that are used to define the operations possible on them and the storage
+						method for each of them. </p>
+					<p>Python has five standard data types:</p>
+					<ol>
+						<li>Numbers</li>
+						<li>String</li>
+						<li>List</li>
+						<li>Tuple</li>
+						<li>Dictionary</li>
+					</ol>
+					<h5>1. NUMBERS</h5>
+					<p>Number data types store numeric values. Number objects are created when you assign a value to
+						them.</p>
+					<p>Python supports four different numerical types: </p>
+
+					<ul>
+						<li>int (signed integers) </li>
+						<li>long (long integers, they can also be represented in octal and hexadecimal) </li>
+						<li>float (floating point real values) </li>
+						<li>complex (complex numbers) </li>
+					</ul>
+					<br>
+					<h5>2. STRINGS</h5>
+					<p>Strings in Python are identified as a contiguous set of characters represented in the quotation
+						marks. Python allows for either pairs of single or double quotes. Subsets of strings can be
+						taken using the slice operator ([ ] and [:] ) with indexes starting at 0 in the beginning of the
+						string and working their way from -1 at the end. </p>
+					<p>The plus (+) sign is the string concatenation operator and the asterisk (*) is the repetition
+						operator. </p>
+					<p><b>Example</b></p>
+					<code><pre>
+	str = 'Hello World!' 
+	print str     
+	print str[0]   
+	print str[2:5] 
+	print str[2:]  
+	print str * 2      # Prints string two times 
+	print str + "TEST" # Prints concatenated string </pre>
+	</code>
+					<p><b>Output</b></p>
+					<pre>
+	Hello World!
+	H
+	llo
+	llo World!
+	Hello World!Hello World! 
+	</pre>
+					<br>
+					<h5>3. LISTS</h5>
+					<p>Lists are the most versatile of Python's compound data types. A list contains items separated by
+						commas and enclosed within square brackets ([]). To some extent, lists are similar to arrays in
+						C. One difference between them is that all the items belonging to a list can be of different
+						data type. </p>
+					<p>The values stored in a list can be accessed using the slice operator ([ ] and [:]) with indexes
+						starting at 0 in the beginning of the list and working their way to end -1. The plus (+) sign is
+						the list concatenation operator, and the asterisk (*) is the repetition operator. </p>
+					<p><b>Example</b></p>
+					<code><pre>
+	list = [ 'abcd', 786 , 2.23, 'john', 70.2 ] 
+	tinylist = [123, 'john'] 
+ 
+	print list          # Prints complete list 
+	print list[0]       # Prints first element of the list 
+	print list[1:3]     # Prints elements starting from 2nd till 3rd  
+	print list[2:]      # Prints elements starting from 3rd element 
+	print tinylist * 2  # Prints list two times 
+	print list + tinylist # Prints concatenated lists 
+	</pre>
+	</code>
+					<p><b>Output</b></p>
+					<pre>
+	['abcd', 786, 2.23, 'john', 70.200000000000003] 
+	abcd 
+	[786, 2.23]
+	[2.23, 'john', 70.200000000000003] 
+	[123, 'john', 123, 'john'] 
+	['abcd', 786, 2.23, 'john', 70.200000000000003, 123, 'john'] 
+	</pre>
+					<br>
+					<h5>4. TUPLES</h5>
+					<p>A tuple is another sequence data type that is similar to the list. A tuple consists of a number
+						of values separated by commas. Unlike lists, however, tuples are enclosed within parentheses.
+					</p>
+					<p>The main differences between lists and tuples are: Lists are enclosed in brackets ( [ ] ) and
+						their elements and size can be changed, while tuples are enclosed in parentheses ( ( ) ) and
+						cannot be updated. Tuples can be thought of as readonly lists. </p>
+					<p><b>Example</b></p>
+					<code><pre>
+	tuple = ( 'abcd', 786 , 2.23, 'john', 70.2  ) <br>
+	tinytuple = (123, 'john') <br>
+ 	<br>
+	print tuple           # Prints complete list 
+	print tuple[0]        # Prints first element of the list 
+	print tuple[1:3]      # Prints elements starting from 2nd till 3rd  
+	print tuple[2:]       # Prints elements starting from 3rd element 
+	print tinytuple * 2   # Prints list two times 
+	print tuple + tinytuple # Prints concatenated lists </pre>
+	</code>
+					<p><b>Output</b></p>
+					<pre>
+	('abcd', 786, 2.23, 'john', 70.200000000000003) 
+	abcd 
+	(786, 2.23) 
+	(2.23, 'john', 70.200000000000003) 
+	(123, 'john', 123, 'john') 
+	('abcd', 786, 2.23, 'john', 70.200000000000003, 123, 'john') 
+	</pre>
+					<br>
+					<h5>5. DICTIONARY</h5>
+					<p>Python's dictionaries are kind of hash table type. They work like associative arrays or hashes
+						found in Perl and consist of key-value pairs. A dictionary key can be almost any Python type,
+						but are usually numbers or strings. Values, on the other hand, can be any arbitrary Python
+						object. </p>
+					<p>Dictionaries are enclosed by curly braces ({ }) and values can be assigned and accessed using
+						square braces ([]).</p>
+					<p><b>Example</b></p>
+					<code><pre>
+	dict = {} 
+	dict['one'] = "This is one" 
+	dict[2]     = "This is two" 
+	tinydict = {'name': 'john','code':6734, 'dept': 'sales'} 
+	print dict['one']       # Prints value for 'one' key 
+	print dict[2]           # Prints value for 2 key 
+	print tinydict          # Prints complete dictionary 
+	print tinydict.keys()   # Prints all the keys 
+	print tinydict.values() # Prints all the values </pre>
+	</code>
+					<p><b>Output</b></p>
+					<pre>
+	This is one 
+	This is two 
+	{'dept': 'sales', 'code': 6734, 'name': 'john'}
+	['dept', 'code', 'name'] 
+	['sales', 6734, 'john']
+	</pre>
+					<br><br>
+					<h2>Decision Making</h2>
+					<p>Decision making is anticipation of conditions occurring while execution of the program and
+						specifying actions taken according to the conditions. Decision </p>
+						<div class="table-responsive">
+							<table class="mx-auto">
+						<tr>
+							<th>TYPE</th>
+							<th>DESCRIPTION</th>
+							<th>SYNTAX</th>
+						</tr>
+						<tr>
+							<td>if statements</td>
+							<td>if statement consists of a boolean expression followed by one or more statements. </td>
+							<td>if expression:
+								<br>&nbsp;&nbsp;&nbsp; statement(s)
+							</td>
+						</tr>
+						<tr>
+							<td>if...else statements</td>
+							<td>if statement can be followed by an optional else statement, which executes when the
+								boolean expression is FALSE. </td>
+							<td>if expression: <br>
+								&nbsp;&nbsp;&nbsp; statement(s)
+								<br>else<br>&nbsp;&nbsp;&nbsp; statement(s)
+							</td>
+						</tr>
+						<tr>
+							<td>nested if statements </td>
+							<td>You can use one if or else if statement inside another if or else if statement(s). </td>
+							<td>
+								<pre>
+if expression1: 
+   statement(s) 
+elif expression2: 
+   statement(s) 
+elif expression3: 
+   statement(s)</pre>
+							</td>
+						</tr>
+					</table>
+					</div>
+					<br>
+
+					<h2>Looping</h2>
+					<p>A loop statement allows us to execute a statement or group of statements multiple times. </p>
+					<div class="table-responsive">
+						<table class="mx-auto">
+							<tr>
+								<th>LOOP TYPE</th>
+								<th>DESCRIPTION</th>
+								<th>SYNTAX</th>
+								<th>EXAMPLE</th>
+							</tr>
+							<tr>
+								<td>while loop </td>
+								<td>Repeats a statement or group of statements while a given condition is TRUE. It tests
+									the condition before executing the loop body. </td>
+								<td>
+									<pre>
+while expression: 
+   statement(s) 
+	</pre>
+								</td>
+								<td><code><pre>
+count = 0 
+while count < 5: 
+   print count, " is  less than 5" 
+   count = count + 1 
+	</pre></code></td>
+							</tr>
+							<tr>
+								<td>for loop</td>
+								<td>Executes a sequence of statements multiple times and abbreviates the code that
+									manages the loop variable. </td>
+								<td>
+									<pre>
+for iterating_var in sequence: 
+   statements(s) 
+	</pre>
+								</td>
+								<td><code><pre>
+fruits = ['banana', 'apple',  'mango'] 
+for fruit in fruits:        # Second Example 
+   print 'Current fruit :', fruit 
+	</pre></code></td>
+							</tr>
+							<tr>
+								<td>nested loop</td>
+								<td>You can use one or more loop inside any another while, for or do..while loop. </td>
+								<td>
+									<pre>
+for iterating_var in sequence: 
+   for iterating_var in sequence: 
+      statements(s) 
+   statements(s)<br>
+while expression: 
+   while expression: 
+      statement(s) 
+   statement(s) 
+	</pre>
+								</td>
+								<td><code><pre>
+i = 2 
+while(i < 100): 
+   j = 2 
+   while(j <= (i/j)): 
+      if not(i%j): break 
+      j = j + 1 
+   if (j > i/j) : print i, " is prime" 
+   i = i + 1 
+ 
+print "Good bye!" 
+	</pre></code></td>
+							</tr>
+						</table>
+					</div>
+					<br><br>
+
+
+					<h2>Python Methods</h2><br>
+
+
+					<h5>String Method</h5><br>
+					<table align="center">
+						<tr>
+							<th>METHOD</th>
+							<th>DESCRIPTION</th>
+						</tr>
+						<tr>
+							<td>capitalize()</td>
+							<td>Converts the first character to upper case</td>
+						</tr>
+						<tr>
+							<td>casefold()</td>
+							<td>Converts string into lower case</td>
+						</tr>
+						<tr>
+							<td>count()</td>
+							<td>Returns the number of times a specified value occurs in a string</td>
+						</tr>
+						<tr>
+							<td>endswith()</td>
+							<td>Returns true if the string ends with the specified value</td>
+						</tr>
+						<tr>
+							<td>find()</td>
+							<td>Searches the string for a specified value and returns the position of where it was found
+							</td>
+						</tr>
+						<tr>
+							<td>format()</td>
+							<td>Formats specified values in a string</td>
+						</tr>
+						<tr>
+							<td>format_map()</td>
+							<td>Formats specified values in a string</td>
+						</tr>
+						<tr>
+							<td>index()</td>
+							<td>Searches the string for a specified value and returns the position of where it was found
+							</td>
+						</tr>
+						<tr>
+							<td>isalnum()</td>
+							<td>Returns True if all characters in the string are alphanumeric</td>
+						</tr>
+						<tr>
+							<td>isalpha()</td>
+							<td>Returns True if all characters in the string are in the alphabet</td>
+						</tr>
+						<tr>
+							<td>isdecimal()</td>
+							<td>Returns True if all characters in the string are decimals</td>
+						</tr>
+						<tr>
+							<td>isdigit()</td>
+							<td>isdigit()</td>
+						</tr>
+						<tr>
+							<td>islower()</td>
+							<td>Returns True if all characters in the string are lower case</td>
+						</tr>
+						<tr>
+							<td>isupper()</td>
+							<td>Returns True if all characters in the string are upper case</td>
+						</tr>
+						<tr>
+							<td>join()</td>
+							<td>Joins the elements of an iterable to the end of the string</td>
+						</tr>
+						<tr>
+							<td>lower()</td>
+							<td>Converts a string into lower case</td>
+						</tr>
+						<tr>
+							<td>upper()</td>
+							<td>Converts a string into upper case</td>
+						</tr>
+						<tr>
+							<td>replace()</td>
+							<td>Returns a string where a specified value is replaced with a specified value</td>
+						</tr>
+						<tr>
+							<td>split()</td>
+							<td>Splits the string at the specified separator, and returns a list</td>
+						</tr>
+						<tr>
+							<td>startswith()</td>
+							<td>Returns true if the string starts with the specified value</td>
+						</tr>
+						<tr>
+							<td>swapcase()</td>
+							<td>Swaps cases, lower case becomes upper case and vice versa</td>
+						</tr>
+						<tr>
+							<td>title()</td>
+							<td>Converts the first character of each word to upper case</td>
+						</tr>
+					</table>
+
+					<br>
+
+
+					<h5>List Methods</h5><br>
+					<table align="center">
+						<tr>
+							<th>METHOD</th>
+							<th>DESCRIPTION</th>
+						</tr>
+						<tr>
+							<td>append()</td>
+							<td>Adds an element at the end of the list</td>
+						</tr>
+						<tr>
+							<td>clear()</td>
+							<td>Removes all the elements from the list</td>
+						</tr>
+						<tr>
+							<td>copy()</td>
+							<td>Returns a copy of the list</td>
+						</tr>
+						<tr>
+							<td>count()</td>
+							<td>Returns the number of=20 elements with the specified value</td>
+						</tr>
+						<tr>
+							<td>extend()</td>
+							<td>Add the elements of a list (or any iterable), to the end of the current list</td>
+						</tr>
+						<tr>
+							<td>index()</td>
+							<td>Returns the index of the first element with the specified value</td>
+						</tr>
+						<tr>
+							<td>insert()</td>
+							<td>Adds an element at the specified position</td>
+						</tr>
+						<tr>
+							<td>pop()</td>
+							<td>Removes the element at the specified position</td>
+						</tr>
+						<tr>
+							<td>remove()</td>
+							<td>Removes the first item with the specified value</td>
+						</tr>
+						<tr>
+							<td>reverse()</td>
+							<td>Reverses the order of the list</td>
+						</tr>
+						<tr>
+							<td>sort()</td>
+							<td>Sorts the list</td>
+						</tr>
+					</table>
+
+					<br>
+					<h5>Tuple Methods</h5>
+					<br>
+					<table align="center">
+						<tr>
+							<th>METHOD</th>
+							<th>DESCRIPTION</th>
+						</tr>
+						<tr>
+							<td>count()</td>
+							<td>Returns the number of times a specified value occurs in a tuple</td>
+						</tr>
+						<tr>
+							<td>index()</td>
+							<td>Searches the tuple for a specified value and returns the position of where it was found
+							</td>
+						</tr>
+					</table>
+
+					<br>
+					<h5>Dictionary Methods</h5><br>
+					<table align="center">
+						<tr>
+							<th>METHOD</th>
+							<th>DESCRIPTION</th>
+						</tr>
+						<tr>
+							<td>clear()</td>
+							<td>Removes all the elements from the dictionary</td>
+						</tr>
+						<tr>
+							<td>copy()</td>
+							<td>Returns a copy of the dictionary</td>
+						</tr>
+						<tr>
+							<td>fromkeys()</td>
+							<td>Returns a dictionary with the specified keys and value</td>
+						</tr>
+						<tr>
+							<td>get()</td>
+							<td>Returns the value of the specified key</td>
+						</tr>
+						<tr>
+							<td>items()</td>
+							<td>Returns a list containing a tuple for each key value pair</td>
+						</tr>
+						<tr>
+							<td>keys()</td>
+							<td>Returns a list containing the dictionary's keys</td>
+						</tr>
+						<tr>
+							<td>pop()</td>
+							<td>Removes the element with the specified key</td>
+						</tr>
+						<tr>
+							<td>popitem()</td>
+							<td>Removes the last inserted key-value pair</td>
+						</tr>
+						<tr>
+							<td>setdefault()</td>
+							<td>Returns the value of the specified key. If the key does not exist: insert the key, with
+								the specified value</td>
+						</tr>
+						<tr>
+							<td>update()</td>
+							<td>Updates the dictionary with the specified key-value pairs</td>
+						</tr>
+						<tr>
+							<td>values()</td>
+							<td>Returns a list of all the values in the dictionary</td>
+						</tr>
+					</table>
+
+
+
+
+
+
+
+
+
+
+				</div>
+			</div>
+		</div>
+	</section><br><br>
+
+	<footer>
+
+	</footer>
+
+
+
+
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+		integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+		crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+		crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+		integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+		crossorigin="anonymous"></script>
+	<script src="library/js/javascript.js"></script>
+</body>
+
+</html>

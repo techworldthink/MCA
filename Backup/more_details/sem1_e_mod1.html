@@ -1,0 +1,570 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Electronics </title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link href="library/css/style.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+</head>
+
+<body>
+    <button onclick="openNav()" id="myBtn" title="Go to top">
+        <i class="fa fa-align-justify"></i>
+    </button>
+
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="../index.html">MAIN</a>
+        <a href="#carouselExampleSlidesOnly">HOME</a>
+        <a href="#module1">Module I</a>
+        <a href="sem1_e_mod2.html">Module II</a>
+        <a href="sem1_e_mod3.html">Module III</a>
+        <a href="#module4">Module IV</a>
+        <a href="sem1_e_mod5.html">Module V</a>
+    </div>
+
+    <!-- Use any element to open the sidenav -->
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="d-block w-100" src="library/img/sem1_ele.png" alt="First slide">
+            </div>
+        </div>
+    </div>
+
+    <section id="module1">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12 mt-5">
+
+                    <h2 class="text-center">MODULE I</h2>
+                    <svg height="50" width="100%">
+                        <line x1="0" y1="0" x2="100%" y2="0" style="stroke:rgb(255,0,0);stroke-width:3" />
+                    </svg><br>
+
+                    <b class="red r4-h2">Number System </b><br>
+                    <ul>
+                        <li>Decimal Number System </li>
+                        <li>Binary Number System </li>
+                        <li>Octal Number System </li>
+                        <li>Hexa Decimal Number System </li>
+                    </ul>
+                    <br>
+                    <div class="table-responsive">
+                        <table class="mx-auto">
+                            <tbody>
+                                <tr>
+                                    <th>Number system</th>
+                                    <th>Digits</th>
+                                    <th>Base</th>
+                                    <th>Examples</th>
+                                    <th>Conversion to Decimal</th>
+                                </tr>
+                                <tr>
+                                    <td>Decimal Number System </td>
+                                    <td>0-9 (10)</td>
+                                    <td>Base 10 </td>
+                                    <td>12.5 </td>
+                                    <td>(1*10^1)+<br>(2*10^0)+<br>(5*10^-1) <br>= <br>12.5</td>
+                                </tr>
+                                <tr>
+                                    <td>Binary Number System </td>
+                                    <td>1 & 0 (2) </td>
+                                    <td>Base 2 </td>
+                                    <td>100 </td>
+                                    <td>(1*2^2)+<br>(0*2^1)+<br>(0*2^0) <br>=<br> 4 </td>
+                                </tr>
+                                <tr>
+                                    <td>Octal Number System </td>
+                                    <td>0-7 (8)</td>
+                                    <td>Base 8 </td>
+                                    <td>12570 </td>
+                                    <td>(1 x 84) + <br>(2 x 83) + <br>(5 x 82) + <br>(7 x 81) +<br> (0 x 80)<br> </td>
+                                </tr>
+                                <tr>
+                                    <td>Hexa Decimal Number System </td>
+                                    <td>0-9 & A-F (16)</td>
+                                    <td>Base 16 </td>
+                                    <td>19FDE </td>
+                                    <td>(1 x 164) + <br>(9 x 163) + <br>(F x 162) + <br>(D x 161) + <br>(E x 160) <br>
+                                        <br> <i> (NB: A=10, B=11, C=12, D=13, E=14, F=15)</i>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <br><br>
+
+                    <b class="red r4-h2">Binary numbers </b><br>
+                    <p><br>
+                        In mathematics and digital electronics, a binary number is a number expressed in the base-2
+                        numeral system or binary numeral system, which uses only two symbols: typically "0" (zero) and
+                        "1" (one).
+
+                        The base-2 numeral system is a positional notation with a radix of 2. Each digit is referred to
+                        as a bit. Because of its straightforward implementation in digital electronic circuitry using
+                        logic gates, the binary system is used by almost all modern computers and computer-based
+                        devices.<br><br>
+
+
+                    </p>
+                    <br>
+                    <img src="library/img/e2.png" class="mx-auto d-block img-fluid"><br><br>
+                    <b class="red r4-h2">Representation of signed numbers </b><br><br>
+                    <ul>
+                        <li>Signed Magnitude form </li>
+                        <li>1's complement form </li>
+                        <li>2's complement form </li>
+                    </ul>
+                    <b class="red r4-h2">1.1 Signed Magnitude form </b><br><br>
+                    <p>
+                        The representation of a signed binary number is commonly referred to as the sign-magnitude
+                        notation and if the sign bit is “0”, the number is positive. If the sign bit is “1”, then the
+                        number is negative. When dealing with binary arithmetic operations, it is more convenient to use
+                        the complement of the negative number. <br> [ 1 bit sign + 7bit number ]
+                    </p>
+                    <img src="library/img/e1.jpg" class="mx-auto d-block img-fluid"><br><br>
+                    <b class="red r4-h2">1.2 & 1.3 What’s difference between 1’s Complement and 2’s Complement?
+                    </b><br><br>
+                    <p>
+                        1’s complement of a binary number is another binary number obtained by toggling all bits in
+                        it,<br>
+                        i.e., transforming the 0 bit to 1 and the 1 bit to 0.<br><br>
+
+                        Examples:<br><br>
+
+                        Let numbers be stored using 4 bits<br><br>
+
+                        1's complement of 7 (0111) is 8 (1000)<br>
+                        1's complement of 12 (1100) is 3 (0011)<br>
+                        2’s complement of a binary number is 1 added to the 1’s complement of the binary number.<br><br>
+                        Examples:<br><br>
+
+                        Let numbers be stored using 4 bits<br><br>
+
+                        2's complement of 7 (0111) is 9 (1001)<br>
+                        2's complement of 12 (1100) is 4 (0100)<br><br>
+
+
+                        These representations are used for signed numbers.<br>
+                    </p>
+
+                    <img src="library/img/binary_elec.png" class="mx-auto d-block img-fluid"><br><br>
+
+                    <table class="mx-auto">
+                        <tbody>
+                            <tr>
+                                <th>One's Complement</th>
+                                <th>Two's Complement</th>
+                            </tr>
+                            <tr>
+                                <td> two representations of 0</td>
+                                <td> only one representation for zero</td>
+                            </tr>
+                            <tr>
+                                <td>It cane be easily obtained using an inverter </td>
+                                <td>It has to be arrived at by first obtaining the 1's complement and then adding one to
+                                    it. </td>
+                            </tr>
+                            <tr>
+                                <td>It requires two operations </td>
+                                <td>Only one arithmetic operation is required </td>
+                            </tr>
+                            <tr>
+                                <td>It is often used in logical manipulations for inversion operation </td>
+                                <td>It is used only for arithmetic applications</td>
+                            </tr>
+                        </tbody>
+                    </table><br><br>
+
+                    <div class="table-responsive">
+                        <table class="mx-auto">
+                            <tbody>
+                                <tr>
+                                    <th>Represent in Signed magnitude form </th>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <mark> Number = 12 </mark><br><br> Binary = 1100 <br>8 bit representation :
+                                        00001100 <br> sign bit change : 00001100<br><br>
+                                        <mark> Number = -12</mark> <br><br> Binary = 1100 <br>8 bit representation :
+                                        00001100 <br> sign bit change : 10001100<br><br>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>Represent signed number in 1's complement form </th>
+                                </tr>
+                                <tr>
+                                    <td><mark>Number = 12 </mark><br><br> Binary = 1100 <br>8 bit representation :
+                                        00001100 <br> not take complement : 00001100<br><br>
+                                        <mark> Number = -12</mark> <br><br> Binary = 1100 <br>8 bit representation :
+                                        00001100 <br> take complement : 11110011<br><br>
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <th>Represent signed number in 2's complement form </th>
+                                </tr>
+                                <tr>
+                                    <td><mark>Number = 12 </mark><br><br> Binary = 1100 <br>8 bit representation :
+                                        00001100 <br> not take complement : 00001100<br><br>
+                                        <mark> Number = -12</mark> <br><br> Binary = 1100 <br>8 bit representation :
+                                        00001100 <br> take complement : 11110011 <br>add one to LSB : 11110100 <br><br>
+                                    </td>
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div><br><br>
+
+                    <div class="table-responsive">
+                        <table class="mx-auto">
+                            <tbody>
+                                <tr>
+                                    <th colspan="2">Questions - Conversions </th>
+                                </tr>
+                                <tr>
+                                    <td>Decimal equivalence of signed binary numbers expressed in <mark>Signed Magnitude
+                                            form</mark> <br><br> eg: 1000000 & 00000001</td>
+                                    <td>solve 1<br> answer = - 0 <br><br> solve 2 <br> answer = +1 </td>
+                                </tr>
+                                <tr>
+                                    <td>Decimal equivalence of signed binary numbers expressed in <mark> 1's complement
+                                            form</mark><br><br> eg: 11000000 & 00111111 </td>
+                                    <td>solve 1 <br> -2^7 + 2^6 = -128 + 64 = -64 + 1 <br> <mark> (add 1 , bcz signed
+                                            bit is 1 means -ve)</mark>
+                                        <br><br>
+                                        solve 2 <br> 2^5 + 2^4 + 2^3 + 2^2 + 2^1 = +63
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Decimal equivalence of signed binary numbers expressed in <mark> 2's complement
+                                            form</mark> <br><br> eg: 11000001 </td>
+                                    <td>solve <br> -2^7 + 2^6 + 2^0 = -128+64+1 = -63 </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div><br><br>
+                    <b class="red r4-h2">Floating Point Representation </b><br><br>
+                    <p>
+                        The IEEE Standard for Floating-Point Arithmetic (IEEE 754) is a technical standard for
+                        floating-point arithmetic established in 1985 by the Institute of Electrical and Electronics
+                        Engineers (IEEE). The standard addressed many problems found in the diverse floating-point
+                        implementations that made them difficult to use reliably and portably. Many hardware
+                        floating-point units use the IEEE 754 standard.<br><br>
+
+
+                    </p>
+                    <div class="table-responsive">
+                        <table class="mx-auto">
+                            <tbody>
+                                <tr>
+                                    <th>Precision </th>
+                                    <th>Base </th>
+                                    <th>Sign </th>
+                                    <th>Exponent </th>
+                                    <th>Significand </th>
+                                </tr>
+                                <tr>
+                                    <th>Single precision </th>
+                                    <td>2 </td>
+                                    <td>1 </td>
+                                    <td>8 </td>
+                                    <td>23+1 </td>
+                                </tr>
+                                <tr>
+                                    <th>Double precision </th>
+                                    <td>2 </td>
+                                    <td>1 </td>
+                                    <td>11 </td>
+                                    <td>52+1 </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div><br><br>
+                    <p>
+                        A finite number can also represented by four integers components, a sign (s), a base (b), a
+                        significand (m), and an exponent (e).
+                        <br>
+                        Depending on base and the number of bits used to encode various components, the IEEE 754
+                        standard defines five basic formats. Among the five formats, the binary32 and the binary64
+                        formats are single precision and double precision formats respectively in which the base is 2.
+                        <br>
+
+
+                    </p>
+                    <b>Single Precision Format (32 bit)</b><br>
+
+                    <ul>
+                        <li>23 bits for significant </li>
+                        <li>8 bits for exponent </li>
+                        <li>1 bit for sign </li>
+                    </ul>
+                    <img src="library/img/ieee_single.png" class="mx-auto d-block img-fluid"><br><br>
+
+                    <div class="table-responsive">
+                        <table class="mx-auto">
+                            <tbody>
+                                <tr>
+                                    <th>To convert the decimal into floating point, we have 3 elements in a 32-bit
+                                        floating point representation </th>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <ul>
+                                            <li>Sign (MSB) </li>
+                                            <li>Exponent (8 bits after MSB) </li>
+                                            <li>Mantissa (Remaining 23 bits </li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Number : 17 <br><br>
+                                        Binary : 10001 <br>
+                                        Normalizing : 1.0001 : (1.001 x 2^4)<br>
+                                        Sign bit : 0 <br>
+                                        Exponant : 4 + 127 (bias) = 131 =
+                                        10000011<br>
+                                        Mantisa : 0001...
+                                        add zeros.<br>
+                                        &nbsp;&nbsp;00010000000000000000000<br>
+                                        Representation : (sign exp man) <br><br>
+                                        <mark>0 10000011 00010000000000000000000 </mark>
+                                        <br><br>
+                                        <mark>NB: 1 is omitted from the mantissa's actual storage because it is
+                                            redundant. </mark>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>To convert the floating point into decimal, we have 3 elements in a 32-bit
+                                        floating point representation </th>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <ul>
+                                            <li>Sign (MSB) </li>
+                                            <li>Exponent (8 bits after MSB) </li>
+                                            <li>Mantissa (Remaining 23 bits </li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Number : 0 10000011 00010000000000000000000<br>
+                                        <br>
+                                        Sign : +ve<br>
+                                        Exponant : 131 (10000011) - 127 = 4<br>
+                                        Mantisa : 0001<br>
+                                        Represetation : + 1.0001 x 2^4 = 10001 =17 <br>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th><a
+                                            href="http://cstl-csm.semo.edu/xzhang/Class%20Folder/CS280/Workbook_HTML/FLOATING_tut.htm#:~:text=The%20sign%20of%20a%20binary,bit%20indicates%20a%20positive%20number.&text=Before%20a%20floating%2Dpoint%20binary,its%20mantissa%20must%20be%20normalized.">More
+                                            Information </a></th>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div><br><br>
+
+                    <b class="red r4-h2">Logic gates </b><br><br>
+                    <p>
+                        Logic gates are the basic building blocks of any digital system. It is an electronic circuit
+                        having one or more than one input and only one output. The relationship between the input and
+                        the output is based on a certain logic. Based on this, logic gates are named as AND gate, OR
+                        gate, NOT gate etc.
+                    </p><br><br>
+
+                    <img src="library/img/e_or_gate.png" class="mx-auto d-block img-fluid"><br><br>
+                    <img src="library/img/e_and_gate.png" class="mx-auto d-block img-fluid"><br><br>
+                    <img src="library/img/e_not_gate.png" class="mx-auto d-block img-fluid"><br><br>
+
+                    <b class="red r4-h2">Combinations of logic gates </b><br><br><br>
+                    <img src="library/img/e_nor_gate.png" class="mx-auto d-block img-fluid"><br><br>
+                    <img src="library/img/e_nand_gate.png" class="mx-auto d-block img-fluid"><br><br>
+                    <img src="library/img/e_exor_gate.png" class="mx-auto d-block img-fluid"><br><br><br>
+
+
+                    <b class="red r4-h2">Boolean Algebra </b><br><br>
+                    <p>
+                        Boolean Algebra is used to analyze and simplify the digital (logic) circuits. It uses only the
+                        binary numbers i.e. 0 and 1. It is also called as Binary Algebra or logical Algebra. Boolean
+                        algebra was invented by George Boole in 1854.
+                    </p>
+                    <b class="red r4-h2">Boolean Laws </b><br><br>
+
+
+                    <div class="table-responsive">
+                        <table class="mx-auto">
+                            <tbody>
+                                <tr>
+                                    <th>LAWS</th>
+                                    <th>Representation</th>
+                                </tr>
+                                <tr>
+                                    <td>Commutative law </td>
+                                    <td>i) A.B = B.A <br> ii) A+B = B+A </td>
+                                </tr>
+                                <tr>
+                                    <td>Associative law </td>
+                                    <td>i) (A.B).C = A.(B.C) <br> ii) (A+B)+C = A+(B+C)</td>
+                                </tr>
+                                <tr>
+                                    <td>Distributive law </td>
+                                    <td>i) A.(B+C) = A.B + A.C </td>
+                                </tr>
+                                <tr>
+                                    <td>AND law </td>
+                                    <td>i) A.0 = 0 <br> ii) A.1 = A <br> iii) A.A = A <br> iv) A.<span
+                                            class="otxt">A</span> = 0 </td>
+                                </tr>
+                                <tr>
+                                    <td>OR law </td>
+                                    <td>i) A+0 = A <br> ii) A+1 = 1 <br> iii) A+A = A <br> iv) A+<span
+                                            class="otxt">A</span> = 1 </td>
+                                </tr>
+                                <tr>
+                                    <td>INVERSION law </td>
+                                    <td>Complement of <span class="otxt">A</span> = A </td>
+                                </tr>
+                                <tr>
+                                    <td>Examples </td>
+                                    <td>A + AB </span> = A <br><br>
+                                        A + <span class="otxt">A</span>B = A + B<br><br>
+                                        (A+B)+(A+C) = A+BC
+                                    </td>
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div><br><br>
+                    <b class="red r4-h2">De Morgan's Theorem </b><br><br>
+                    <p>
+                        The theorem explains that the complement of the product of all the terms is equal to the sum of
+                        the complement of each term. Likewise, the complement of the sum of all the terms is equal to
+                        the product of the complement of each term.
+                    </p>
+                    <img src="library/img/DeMorgans-Theorems.png" class="mx-auto d-block img-fluid"><br><br><br>
+
+                    <b class="red r4-h2">Difference between SOP and POS in Digital Logic </b><br><br>
+                    <p>
+                        In digital logic, the inputs and output of a function are in the form of binary numbers (boolean
+                        values) i.e., the values are either zero (0) or one (1). Therefore, digital logic is also known
+                        as ‘Boolean logic’. These inputs and output can be termed as ‘Boolean Variables’. The output
+                        boolean variable of a digital signal can be expressed in terms of input boolean variables which
+                        forms the ‘Boolean Expression’.
+                        <br><br>
+                        Representation of Boolean expression can be primarily done in two ways. They are as follows:
+                    </p>
+                    <ol>
+                        <li>Sum of Products (SOP) form </li>
+                        <li>Product of Sums (POS) form </li>
+                    </ol>
+                    <p>
+                        If the number of input variables are n, then the total number of combinations in Boolean algebra
+                        is 2<sup>n</sup>.<br><br>
+
+                        If the input variable (let A) value is :
+                        <br><br>
+                        Zero (0) – a is LOW -It should be represented as A’ (Complement of A)
+                        One (1) – a is HIGH -It should be represented as A
+                    </p>
+
+                    <img src="library/img/elect/elec-01.jpg" class="mx-auto d-block img-fluid"><br><br>
+                    <img src="library/img/elect/elec-02.jpg" class="mx-auto d-block img-fluid"><br><br>
+                    <img src="library/img/elect/elec-03.jpg" class="mx-auto d-block img-fluid"><br><br>
+                    <img src="library/img/elect/elec-04.jpg" class="mx-auto d-block img-fluid"><br><br>
+                    <img src="library/img/elect/elec-05.jpg" class="mx-auto d-block img-fluid"><br><br>
+                    <img src="library/img/elect/elec-06.jpg" class="mx-auto d-block img-fluid"><br><br>
+                    <img src="library/img/elect/elec-07.jpg" class="mx-auto d-block img-fluid"><br><br>
+                    <img src="library/img/elect/elec-08.jpg" class="mx-auto d-block img-fluid"><br><br>
+                    <img src="library/img/elect/elec-09.jpg" class="mx-auto d-block img-fluid"><br><br>
+                    <img src="library/img/elect/elec-10.jpg" class="mx-auto d-block img-fluid"><br><br>
+                    <img src="library/img/elect/elec-11.jpg" class="mx-auto d-block img-fluid"><br><br>
+                    <img src="library/img/elect/elec-12.jpg" class="mx-auto d-block img-fluid"><br><br>
+                    <img src="library/img/elect/elec-13.jpg" class="mx-auto d-block img-fluid"><br><br>
+                    <img src="library/img/elect/elec-14.jpg" class="mx-auto d-block img-fluid"><br><br>
+                    <img src="library/img/elect/elec-15.jpg" class="mx-auto d-block img-fluid"><br><br>
+                    <img src="library/img/elect/elec-16.jpg" class="mx-auto d-block img-fluid"><br><br>
+                    <img src="library/img/elect/elec-17.jpg" class="mx-auto d-block img-fluid"><br><br>
+                    <img src="library/img/elect/elec-18.jpg" class="mx-auto d-block img-fluid"><br><br>
+                    <img src="library/img/elect/elec-19.jpg" class="mx-auto d-block img-fluid"><br><br>
+
+                    <img src="library/img/elect/digital-kmap-1.jpg" class="mx-auto d-block img-fluid"><br><br>
+                    <img src="library/img/elect/digital-kmap-2.jpg" class="mx-auto d-block img-fluid"><br><br>
+                    <img src="library/img/elect/digital-kmap-3.jpg" class="mx-auto d-block img-fluid"><br><br>
+                    <img src="library/img/elect/digital-kmap-4.jpg" class="mx-auto d-block img-fluid"><br><br>
+                    <img src="library/img/elect/digital-kmap-5.jpg" class="mx-auto d-block img-fluid"><br><br>
+                    <img src="library/img/elect/digital-kmap-6.jpg" class="mx-auto d-block img-fluid"><br><br>
+
+                    <img src="library/img/elect/DIG-AF-KM/DIG-AF-KM-1.jpg" class="mx-auto d-block img-fluid"><br><br>
+                    <img src="library/img/elect/DIG-AF-KM/DIG-AF-KM-2.jpg" class="mx-auto d-block img-fluid"><br><br>
+                    <img src="library/img/elect/DIG-AF-KM/DIG-AF-KM-3.jpg" class="mx-auto d-block img-fluid"><br><br>
+                    <img src="library/img/elect/DIG-AF-KM/DIG-AF-KM-4.jpg" class="mx-auto d-block img-fluid"><br><br>
+                    <img src="library/img/elect/DIG-AF-KM/DIG-AF-KM-5.jpg" class="mx-auto d-block img-fluid"><br><br>
+                    <img src="library/img/elect/DIG-AF-KM/DIG-AF-KM-6.jpg" class="mx-auto d-block img-fluid"><br><br>
+                    <img src="library/img/elect/DIG-AF-KM/DIG-AF-KM-7.jpg" class="mx-auto d-block img-fluid"><br><br>
+                    <img src="library/img/elect/DIG-AF-KM/DIG-AF-KM-8.jpg" class="mx-auto d-block img-fluid"><br><br>
+                    
+
+                    <img src="library/img/elect/digital3/digital3-1.jpg" class="mx-auto d-block img-fluid"><br><br>
+                    <img src="library/img/elect/digital3/digital3-2.jpg" class="mx-auto d-block img-fluid"><br><br>
+                    <img src="library/img/elect/digital3/digital3-3.jpg" class="mx-auto d-block img-fluid"><br><br>
+                    <img src="library/img/elect/digital3/digital3-4.jpg" class="mx-auto d-block img-fluid"><br><br>
+
+                    <img src="library/img/elect/jan 6/digital_aiswariya_jan_6-01.jpg" class="mx-auto d-block img-fluid"><br><br>
+                    <img src="library/img/elect/jan 6/digital_aiswariya_jan_6-02.jpg" class="mx-auto d-block img-fluid"><br><br>
+                    <img src="library/img/elect/jan 6/digital_aiswariya_jan_6-03.jpg" class="mx-auto d-block img-fluid"><br><br>
+                    <img src="library/img/elect/jan 6/digital_aiswariya_jan_6-04.jpg" class="mx-auto d-block img-fluid"><br><br>
+                    <img src="library/img/elect/jan 6/digital_aiswariya_jan_6-05.jpg" class="mx-auto d-block img-fluid"><br><br>
+                    <img src="library/img/elect/jan 6/digital_aiswariya_jan_6-06.jpg" class="mx-auto d-block img-fluid"><br><br>
+                    <img src="library/img/elect/jan 6/digital_aiswariya_jan_6-07.jpg" class="mx-auto d-block img-fluid"><br><br>
+                    <img src="library/img/elect/jan 6/digital_aiswariya_jan_6-08.jpg" class="mx-auto d-block img-fluid"><br><br>
+                    <img src="library/img/elect/jan 6/digital_aiswariya_jan_6-09.jpg" class="mx-auto d-block img-fluid"><br><br>
+                    <img src="library/img/elect/jan 6/digital_aiswariya_jan_6-10.jpg" class="mx-auto d-block img-fluid"><br><br>
+                    <img src="library/img/elect/jan 6/digital_aiswariya_jan_6-11.jpg" class="mx-auto d-block img-fluid"><br><br>
+                    <img src="library/img/elect/jan 6/digital_aiswariya_jan_6-12.jpg" class="mx-auto d-block img-fluid"><br><br>
+                    <img src="library/img/elect/jan 6/digital_aiswariya_jan_6-13.jpg" class="mx-auto d-block img-fluid"><br><br>
+                    <img src="library/img/elect/jan 6/digital_aiswariya_jan_6-14.jpg" class="mx-auto d-block img-fluid"><br><br>
+                    
+
+
+
+
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+
+    </footer>
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+    <script src="library/js/javascript.js"></script>
+</body>
+
+</html>

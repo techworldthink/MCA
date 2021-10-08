@@ -1,0 +1,58 @@
+
+.main {
+    /* box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);*/
+     margin-top: 1em;
+     width:90%  !important;
+     margin-left: auto;
+     margin-right: auto;
+ }
+ .img-card{
+     box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
+     margin: .5em;
+ }
+ img{
+     width:100%;
+ }
+ b{
+     display: block;
+     text-align: center;
+ }
+ a{
+     text-decoration: none;
+     background-color: #0988e8;
+     border-radius: 5px;
+     color:white;
+     text-align: center;
+     display: block;
+     width: 80%;
+     margin-left: auto;
+     margin-right: auto;
+ }
+ .head{
+     box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
+     margin: .5em;
+     text-align: center;
+     text-transform: uppercase;
+     padding: 5px;
+ }
+/*...........................button................................................................*/
+
+#myBtn {
+    display: block; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color:rgba(0,0,0,.0); /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 0px; /* Some padding */
+    border-radius: 50px; /* Rounded corners */
+    font-size: 10px; /* Increase font size */
+  }
+  
+.right{
+    text-align: right;
+}

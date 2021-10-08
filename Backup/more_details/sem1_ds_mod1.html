@@ -1,0 +1,720 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Structure </title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link href="library/css/style.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+</head>
+
+<body>
+    <button onclick="openNav()" id="myBtn" title="Go to top">
+        <i class="fa fa-align-justify"></i>
+    </button>
+
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="../index.html">MAIN</a>
+        <a href="#carouselExampleSlidesOnly">HOME</a>
+        <a href="#module1">Module I</a>
+        <a href="sem1_ds_mod2.html">Module II</a>
+        <a href="sem1_ds_mod2.html#one">notes 1</a>
+        <a href="sem1_ds_mod2.html#two">notes 2</a>
+        <a href="sem1_ds_mod3.html">Module III</a>
+        <a href="#module4">Module IV</a>
+        <a href="#module5">Module V</a>
+    </div>
+
+    <!-- Use any element to open the sidenav -->
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="d-block w-100" src="library/img/ds_main.jpg" alt="First slide">
+            </div>
+        </div>
+    </div>
+
+    <section id="module1">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12 mt-5">
+
+                    <h2 class="text-center">MODULE I</h2>
+                    <svg height="50" width="100%">
+                        <line x1="0" y1="0" x2="100%" y2="0" style="stroke:rgb(255,0,0);stroke-width:3" />
+                    </svg><br>
+
+                    <b class="red r4-h2">DATA STUCTURE </b><br><br>
+
+                    <img src="library/img/ds_2.png" class="mx-auto d-block img-fluid"><br><br>
+
+                    <b class="red r4-h2">ARRAY </b><br><br>
+                    <p>
+                        Array is a container which can hold a fix number of items and these items should be of the same
+                        type. Most of the data structures make use of arrays to implement their algorithms. Following
+                        are the important terms to understand the concept of Array
+                    </p><br><br>
+                    <img src="library/img/array-2.png" class="mx-auto d-block img-fluid"><br><br>
+
+                    <div class="table-responsive">
+                        <table class="mx-auto">
+                            <tbody>
+                                <tr>
+                                    <th>Element </th>
+                                    <td>
+                                        Each item stored in an array is called an element. </td>
+                                </tr>
+                                <tr>
+                                    <th>Index </th>
+                                    <td> Each location of an element in an array has a numerical index, which is used to
+                                        identify
+                                        the element. </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div><br><br>
+                    <div class="table-responsive">
+                        <table class="mx-auto">
+                            <tbody>
+                                <tr>
+                                    <th>Properties/characteristics of an Array </th>
+
+                                </tr>
+                                <tr>
+                                    <td>1) An array is a derived data type, which is defined using basic data types like
+                                        int, char, float and even structures (which is called the array of structures).
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>2) Array elements are stored in contiguous memory blocks/subsequent memory
+                                        blocks in primary memory. </td>
+                                </tr>
+                                <tr>
+                                    <td>3) Array name represents its base address. The base address is the address of
+                                        the first element of the array. </td>
+                                </tr>
+                                <tr>
+                                    <td>4) Array’s index starts with 0 and ends with N-1. Here, N stands for the number
+                                        of elements. For Example, there is an integer array of 5 elements, then it’s
+                                        indexing will be 0 to 4. </td>
+                                </tr>
+                                <tr>
+                                    <td>5) Only constants and literal values (an integer value like 5, 10, 12,...) can
+                                        be assigned the number of elements in an array. </td>
+                                </tr>
+                                <tr>
+                                    <td>6) While declaring an array, we can also assign each element with 0 like this.
+
+                                        <br> <br>Eg: int age[10]={0};
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>7) There is no need to provide the number of elements while declaring an array,
+                                        but we have to provide the values at the time of declaration. In this case,
+                                        array size will be the number of values that you have provided.
+
+                                        <br> <br>Eg: int age[]={21,22,25,45,56};
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div><br><br>
+
+                    <div class="table-responsive">
+                        <table class="mx-auto">
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <pre>
+//SAMPLE PROGRAME
+
+#include <stdio.h>
+main() {
+	int Array[] = {1,3,5,7,8};
+	int i = 0;   
+	int n = 5;
+	printf("The original array elements are :\n");
+	
+	for(i = 0; i &lt;n; i++) {
+		printf("Array_Index_value[%d] = %d \n", i, Array[i]);
+	}
+}
+       
+                                      
+                                           
+                                        </pre>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div><br><br><br>
+
+                    <div>
+                        <p class="link">
+                            <a href="https://github.com/techworldthink/Data_Structure_lab_MCA/blob/main/array_insertion_in_c.c "
+                                class="white">Array Insertion Programme </a><br>
+                            <a href="https://github.com/techworldthink/Data_Structure_lab_MCA/blob/main/array_deletion_in_C.c "
+                                class="white">Array Deletion Programme</a><br>
+                            <a href="https://github.com/techworldthink/Data_Structure_lab_MCA/blob/main/Testing/array_operations_in_c.c "
+                                class="white">Array Full Programme</a><br>
+                        </p>
+                    </div>
+
+                    <div class="table-responsive">
+                        <table class="mx-auto">
+                            <tbody>
+                                <tr>
+                                    <th colspan="2">Basic Operations </th>
+                                </tr>
+                                <tr>
+                                    <td>Traverse </td>
+                                    <td>print all the array elements one by one. </td>
+                                </tr>
+                                <tr>
+                                    <td>Insertion </td>
+                                    <td>Adds an element at the given index. </td>
+                                </tr>
+                                <tr>
+                                    <td>Deletion </td>
+                                    <td>Deletes an element at the given index. </td>
+                                </tr>
+                                <tr>
+                                    <td>Search </td>
+                                    <td>Searches an element using the given index or by the value. </td>
+                                </tr>
+                                <tr>
+                                    <td>Update </td>
+                                    <td>Updates an element at the given index. </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div><br><br><br>
+
+
+
+
+
+                    <b class="red r4-h2">STACK </b><br><br>
+                    <p>A stack is an Abstract Data Type (ADT), commonly used in most programming languages. It is named
+                        stack as it behaves like a real-world stack</p>
+                    <ul>
+                        <li>A real-world stack allows operations at one end only </li>
+                        <li> LIFO data structure (Last-in-first-out)</li>
+                        <li>In stack terminology, insertion operation is called PUSH operation and removal operation is
+                            called POP operation.</li>
+                    </ul>
+                    <br>
+                    <img src="library/img/stack.png" class="mx-auto d-block img-fluid"><br><br>
+                    <p>A stack can be implemented by means of Array, Structure, Pointer, and Linked List. Stack can
+                        either be a fixed size one or it may have a sense of dynamic resizing</p>
+
+
+                    <div class="table-responsive">
+                        <table class="mx-auto">
+                            <tbody>
+                                <tr>
+                                    <th colspan="2">Basic Operations </th>
+                                </tr>
+                                <tr>
+                                    <td>push() </td>
+                                    <td>Pushing (storing) an element on the stack. </td>
+                                </tr>
+                                <tr>
+                                    <td>pop() </td>
+                                    <td>Removing (accessing) an element from the stack. </td>
+                                </tr>
+                                <tr>
+                                    <td>peek() </td>
+                                    <td>get the top data element of the stack, without removing it. </td>
+                                </tr>
+                                <tr>
+                                    <td>isFull() </td>
+                                    <td>check if stack is full. </td>
+                                </tr>
+                                <tr>
+                                    <td>isEmpty() </td>
+                                    <td>check if stack is empty. </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div><br><br><br>
+
+                    <div class="table-responsive">
+                        <table class="mx-auto">
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <pre>
+    //peek operation
+    
+    int peek() {
+        return stack[top];
+     }
+
+     //check stack is full
+
+     bool isfull() {
+        if(top == MAXSIZE)
+           return true;
+        else
+           return false;
+     }
+
+     //check stack is empty
+
+     bool isempty() {
+        if(top == -1)
+           return true;
+        else
+           return false;
+     }
+
+     //stack PUSH
+
+     void push(int data) {
+        if(!isFull()) {
+           top = top + 1;   
+           stack[top] = data;
+        } else {
+           printf("Could not insert data, Stack is full.\n");
+        }
+     }
+
+     //stack POP
+
+     int pop(int data) {
+
+        if(!isempty()) {
+           data = stack[top];
+           top = top - 1;   
+           return data;
+        } else {
+           printf("Could not retrieve data, Stack is empty.\n");
+        }
+     }
+           
+                                          
+                                               
+                                            </pre>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div><br>
+                    <div>
+                        <p class="link">
+                            <a href="https://github.com/techworldthink/Data_Structure_lab_MCA/blob/main/Testing/stack_operations_using_array.c"
+                                class="white">Stack Full Programme</a><br>
+                        </p>
+                    </div>
+
+                    <br><br>
+
+
+                    <b class="red r4-h2">QUEUE </b><br><br>
+                    <p>Queue is an abstract data structure, somewhat similar to Stacks. Unlike stacks, a queue is open
+                        at both its ends. One end is always used to insert data (enqueue) and the other is used to
+                        remove data (dequeue). Queue follows First-In-First-Out methodology, i.e., the data item stored
+                        first will be accessed first.</p>
+
+                    <img src="library/img/queue.png" class="mx-auto d-block img-fluid" style="width: 50%;"><br><br>
+                    <p>As in stacks, a queue can also be implemented using Arrays, Linked-lists, Pointers and
+                        Structures. For the sake of simplicity, we shall implement queues using one-dimensional array.
+                    </p><br>
+
+                    <div class="table-responsive">
+                        <table class="mx-auto">
+                            <tbody>
+                                <tr>
+                                    <th colspan="2">Basic Operations </th>
+                                </tr>
+                                <tr>
+                                    <td>enqueue() </td>
+                                    <td>add (store) an item to the queue. </td>
+                                </tr>
+                                <tr>
+                                    <td>dequeue() </td>
+                                    <td>remove (access) an item from the queue. </td>
+                                </tr>
+                                <tr>
+                                    <td>peek() </td>
+                                    <td>get the top data element of the stack, without removing it. </td>
+                                </tr>
+                                <tr>
+                                    <td>isFull() </td>
+                                    <td>check if stack is full. </td>
+                                </tr>
+                                <tr>
+                                    <td>isEmpty() </td>
+                                    <td>check if stack is empty. </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div><br><br><br>
+
+                    <div class="table-responsive">
+                        <table class="mx-auto">
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <pre>
+    //peek operation
+    
+    int peek() {
+        return queue[front];
+     }
+
+     //check queue is full
+
+     bool isfull() {
+        if(rear == MAXSIZE - 1)
+           return true;
+        else
+           return false;
+     }
+
+     //check queue is empty
+
+     bool isempty() {
+        if(front &lt; 0 || front > rear) 
+           return true;
+        else
+           return false;
+     }
+
+     //Enqueue Operation
+
+     int enqueue(int data){      
+        if(isfull())
+          return 0;
+   
+        rear = rear + 1;
+        queue[rear] = data;
+   
+        return 1;
+    }
+
+     //Dequeue Operation
+
+     int dequeue() {
+        if(isempty())
+           return 0;
+     
+        int data = queue[front];
+        front = front + 1;
+     
+        return data;
+     }
+           
+                                          
+                                               
+                                            </pre>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <br>
+                        <p class="link">
+                            <a href="https://github.com/techworldthink/Data_Structure_lab_MCA/blob/main/Testing/queue_implementation_using_array.c"
+                                class="white">Queue Full Programme</a><br>
+                        </p>
+                    </div>
+                    <br><br>
+
+
+                    <b class="red r4-h2">TREE </b><br><br>
+                    <p>Tree represents the nodes connected by edges. We will discuss binary tree or binary search tree
+                        specifically. </p>
+                    <div class="table-responsive">
+                        <table class="mx-auto">
+                            <tbody>
+                                <tr>
+                                    <th>Terms </th>
+                                    <th>Definitions </th>
+                                </tr>
+                                <tr>
+                                    <td>Node </td>
+                                    <td>This is the main componant of any tree structure.
+                                        A node of a tree stores the actual data and links to the other node. </td>
+                                </tr>
+                                <tr>
+                                    <td>Path </td>
+                                    <td>Path refers to the sequence of nodes along the edges of a tree. </td>
+                                </tr>
+                                <tr>
+                                    <td>Root </td>
+                                    <td>The node at the top of the tree is called root. There is only one root per tree
+                                        and one path from the root node to any node. </td>
+                                </tr>
+                                <tr>
+                                    <td>Parent </td>
+                                    <td>Any node except the root node has one edge upward to a node called parent.The
+                                        parent of a node is the immediate predecessor of a node. </td>
+                                </tr>
+                                <tr>
+                                    <td>Child </td>
+                                    <td>The node below a given node connected by its edge downward is called its child
+                                        node.Imeediate successor of a node are known as child. </td>
+                                </tr>
+                                <tr>
+                                    <td>Leaf </td>
+                                    <td>The node which does not have any child node is called the leaf node. </td>
+                                </tr>
+                                <tr>
+                                    <td>Subtree </td>
+                                    <td>Subtree represents the descendants of a node </td>
+                                </tr>
+                                <tr>
+                                    <td>Visiting </td>
+                                    <td>Visiting refers to checking the value of a node when control is on the node.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Traversing </td>
+                                    <td>Traversing means passing through nodes in a specific order. </td>
+                                </tr>
+                                <tr>
+                                    <td>Levels </td>
+                                    <td>Level of a node represents the generation of a node. If the root node is at
+                                        level 0, then its next child node is at level 1, its grandchild is at level 2,
+                                        and so on. </td>
+                                </tr>
+                                <tr>
+                                    <td>keys </td>
+                                    <td> Key represents a value of a node based on which a search operation is to be
+                                        carried out for a node </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div><br><br>
+
+                    <b class="red r4-h2">1.1 Binary Tree </b><br>
+                    <p>
+                        Binary Tree is a special datastructure used for data storage purposes.<br> A binary tree has a
+                        special
+                        condition that each node can have a maximum of two children. <br>A binary tree has the benefits
+                        of both
+                        an ordered array and a linked list as search is as quick as in a sorted array and insertion or
+                        deletion operation are as fast as in linked list.
+                    </p>
+                    <img src="library/img/ds/binary_tree.jpg" class="mx-auto d-block img-fluid"
+                        style="width: 50%;"><br><br>
+
+
+                    <b class="red r4-h2">1.2 Binary Search Tree </b><br>
+                    <p>
+                        Binary Search tree exhibits a special behavior. A node's left child must have a value less than
+                        its parent's value and the node's right child must have a value greater than its parent value.
+                    </p>
+                    <img src="library/img/ds/binary_search_tree.jpg" class="mx-auto d-block img-fluid"
+                        style="width: 50%;"><br><br>
+                    <p>
+                        The basic operations that can be performed on a binary search tree data structure, are the
+                        following
+                    </p>
+
+                    <div class="table-responsive">
+                        <table class="mx-auto">
+                            <tbody>
+                                <tr>
+                                    <th>Operations </th>
+                                    <th>Definitions </th>
+                                </tr>
+                                <tr>
+                                    <td>Insert </td>
+                                    <td> Inserts an element in a tree/create a tree </td>
+                                </tr>
+                                <tr>
+                                    <td>Search </td>
+                                    <td>Searches an element in a tree </td>
+                                </tr>
+                                <tr>
+                                    <td>Preorder Traversal </td>
+                                    <td>Traverses a tree in a pre-order manner </td>
+                                </tr>
+                                <tr>
+                                    <td>Inorder Traversal </td>
+                                    <td>Traverses a tree in an in-order manner. </td>
+                                </tr>
+                                <tr>
+                                    <td>Postorder Traversal </td>
+                                    <td>Traverses a tree in a post-order manner </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div><br><br>
+                    <b class="red r4-h2">LINKED LIST </b><br><br>
+
+                    <p>A linked list is a linear data structure, in which the elements are not stored at contiguous
+                        memory locations. The elements in a linked list are linked using pointers a linked list consists
+                        of nodes where each node contains a data field and a reference(link) to the next node in the
+                        list.
+
+                    </p>
+                    <img src="library/img/ds/Linkedlist.png" class="mx-auto d-block img-fluid"
+                        style="width: 75%;"><br><br>
+                    <b>Points</b><br><br>
+                    <ul>
+                        <li>Linear data structure </li>
+                        <li>Elements are not stored at contiguous memory locations </li>
+                        <li>Elements in a linked list are linked using pointers </li>
+                        <li>Linked list consists of nodes </li>
+                        <li>Each node contains a data field and a reference(link) to the next node in the list </li>
+                        <li>Dynamic size </li>
+                        <li>Ease of insertion/deletion </li>
+                    </ul>
+                    <b>Drawbacks</b><br><br>
+                    <ul>
+                        <li>Random access is not allowed. We have to access elements sequentially starting from the
+                            first node. So we cannot do binary search with linked lists efficiently with its default
+                            implementation </li>
+                        <li>Extra memory space for a pointer is required with each element of the list </li>
+                        <li>Not cache friendly. Since array elements are contiguous locations, there is locality of
+                            reference which is not there in case of linked lists </li>
+
+                    </ul>
+                    <b>Representation of node</b><br><br>
+                    <pre>                    <code>
+    // A linked list node 
+    struct Node { 
+    int data; 
+    struct Node* next; 
+    }; 
+                    </code></pre>
+                    <br>
+                    <b>Types</b><br><br>
+                    <dl>
+                        <dt>Simple Linked List </dt>
+                        <dd>Item navigation is forward only </dd>
+                        <dt>Doubly Linked List </dt>
+                        <dd>Items can be navigated forward and backward </dd>
+                        <dt>Circular Linked List </dt>
+                        <dd>Last item contains link of the first element as next and the first element has a link to the
+                            last element as previous </dd>
+                    </dl>
+
+                    <b>Operations</b><br><br>
+                    <ul>
+                        <li>Insertion </li>
+                        <ul>
+                            <li>at beginning </li>
+                            <li>at end </li>
+                            <li>at a particular position </li>
+                        </ul>
+                        <li>Deletion </li>
+                        <li>Display </li>
+                        <li>Search </li>
+                        <li>Delete </li>
+                    </ul>
+
+                    <p class="link">
+                        <a href="https://raw.githubusercontent.com/techworldthink/Data_Structure_lab_MCA/main/linked_list_insert_end_first_mid_display_search_opearations.cpp"
+                            class="white">Linked List Full Programme</a><br>
+                    </p>
+
+
+                    <img src="library/img/ds/module 1/DS M1.1-01.jpg " class="mx-auto d-block img-fluid"><br><br>
+                    <img src="library/img/ds/module 1/DS M1.1-02.jpg " class="mx-auto d-block img-fluid"><br><br>
+                    <img src="library/img/ds/module 1/DS M1.1-03.jpg " class="mx-auto d-block img-fluid"><br><br>
+                    <img src="library/img/ds/module 1/DS M1.1-04.jpg " class="mx-auto d-block img-fluid"><br><br>
+                    <img src="library/img/ds/module 1/DS M1.1-05.jpg " class="mx-auto d-block img-fluid"><br><br>
+                    <img src="library/img/ds/module 1/DS M1.1-06.jpg " class="mx-auto d-block img-fluid"><br><br>
+                    <img src="library/img/ds/module 1/DS M1.1-07.jpg " class="mx-auto d-block img-fluid"><br><br>
+                    <img src="library/img/ds/module 1/DS M1.1-08.jpg " class="mx-auto d-block img-fluid"><br><br>
+                    <img src="library/img/ds/module 1/DS M1.1-09.jpg " class="mx-auto d-block img-fluid"><br><br>
+                    <img src="library/img/ds/module 1/DS M1.1-10.jpg " class="mx-auto d-block img-fluid"><br><br>
+                    <img src="library/img/ds/module 1/DS M1.1-11.jpg " class="mx-auto d-block img-fluid"><br><br>
+                    <img src="library/img/ds/module 1/DS M1.1-12.jpg " class="mx-auto d-block img-fluid"><br><br>
+                    <img src="library/img/ds/module 1/DS M1.1-13.jpg " class="mx-auto d-block img-fluid"><br><br>
+                    <img src="library/img/ds/module 1/DS M1.1-14.jpg " class="mx-auto d-block img-fluid"><br><br>
+                    <img src="library/img/ds/module 1/DS M1.1-15.jpg " class="mx-auto d-block img-fluid"><br><br>
+                    <img src="library/img/ds/module 1/DS M1.1-16.jpg " class="mx-auto d-block img-fluid"><br><br>
+                    <img src="library/img/ds/module 1/DS M1.1-17.jpg " class="mx-auto d-block img-fluid"><br><br>
+                    <img src="library/img/ds/module 1/DS M1.1-18.jpg " class="mx-auto d-block img-fluid"><br><br>
+                    <img src="library/img/ds/module 1/DS M1.1-19.jpg " class="mx-auto d-block img-fluid"><br><br>
+                    <img src="library/img/ds/module 1/DS M1.1-20.jpg " class="mx-auto d-block img-fluid"><br><br>
+                    <img src="library/img/ds/module 1/DS M1.1-21.jpg " class="mx-auto d-block img-fluid"><br><br>
+                    <img src="library/img/ds/module 1/DS M1.1-22.jpg " class="mx-auto d-block img-fluid"><br><br>
+                    <img src="library/img/ds/module 1/DS M1.1-23.jpg " class="mx-auto d-block img-fluid"><br><br>
+                    <img src="library/img/ds/module 1/DS M1.1-24.jpg " class="mx-auto d-block img-fluid"><br><br>
+                    <img src="library/img/ds/module 1/DS M1.1-25.jpg " class="mx-auto d-block img-fluid"><br><br>
+
+                    <img src="library/img/ds/module 1/DS M1.2-01.jpg " class="mx-auto d-block img-fluid"><br><br>
+                    <img src="library/img/ds/module 1/DS M1.2-02.jpg " class="mx-auto d-block img-fluid"><br><br>
+                    <img src="library/img/ds/module 1/DS M1.2-03.jpg " class="mx-auto d-block img-fluid"><br><br>
+                    <img src="library/img/ds/module 1/DS M1.2-04.jpg " class="mx-auto d-block img-fluid"><br><br>
+                    <img src="library/img/ds/module 1/DS M1.2-05.jpg " class="mx-auto d-block img-fluid"><br><br>
+                    <img src="library/img/ds/module 1/DS M1.2-06.jpg " class="mx-auto d-block img-fluid"><br><br>
+                    <img src="library/img/ds/module 1/DS M1.2-07.jpg " class="mx-auto d-block img-fluid"><br><br>
+                    <img src="library/img/ds/module 1/DS M1.2-08.jpg " class="mx-auto d-block img-fluid"><br><br>
+                    <img src="library/img/ds/module 1/DS M1.2-09.jpg " class="mx-auto d-block img-fluid"><br><br>
+                    <img src="library/img/ds/module 1/DS M1.2-10.jpg " class="mx-auto d-block img-fluid"><br><br>
+                    <img src="library/img/ds/module 1/DS M1.2-11.jpg " class="mx-auto d-block img-fluid"><br><br>
+                    <img src="library/img/ds/module 1/DS M1.2-12.jpg " class="mx-auto d-block img-fluid"><br><br>
+                    <img src="library/img/ds/module 1/DS M1.2-13.jpg " class="mx-auto d-block img-fluid"><br><br>
+                    <img src="library/img/ds/module 1/DS M1.2-14.jpg " class="mx-auto d-block img-fluid"><br><br>
+                    <img src="library/img/ds/module 1/DS M1.2-15.jpg " class="mx-auto d-block img-fluid"><br><br>
+                    <img src="library/img/ds/module 1/DS M1.2-16.jpg " class="mx-auto d-block img-fluid"><br><br>
+                    <img src="library/img/ds/module 1/DS M1.2-17.jpg " class="mx-auto d-block img-fluid"><br><br>
+                    <img src="library/img/ds/module 1/DS M1.2-18.jpg " class="mx-auto d-block img-fluid"><br><br>
+                    <img src="library/img/ds/module 1/DS M1.2-19.jpg " class="mx-auto d-block img-fluid"><br><br>
+                    <img src="library/img/ds/module 1/DS M1.2-20.jpg " class="mx-auto d-block img-fluid"><br><br>
+                    <img src="library/img/ds/module 1/DS M1.2-21.jpg " class="mx-auto d-block img-fluid"><br><br>
+                    <img src="library/img/ds/module 1/DS M1.2-22.jpg " class="mx-auto d-block img-fluid"><br><br>
+                    <img src="library/img/ds/module 1/DS M1.2-23.jpg " class="mx-auto d-block img-fluid"><br><br>
+                    <img src="library/img/ds/module 1/DS M1.2-24.jpg " class="mx-auto d-block img-fluid"><br><br>
+
+                    <img src="library/img/ds/module 1/DS M1.3-01.jpg " class="mx-auto d-block img-fluid"><br><br>
+                    <img src="library/img/ds/module 1/DS M1.3-02.jpg " class="mx-auto d-block img-fluid"><br><br>
+                    <img src="library/img/ds/module 1/DS M1.3-03.jpg " class="mx-auto d-block img-fluid"><br><br>
+                    <img src="library/img/ds/module 1/DS M1.3-04.jpg " class="mx-auto d-block img-fluid"><br><br>
+                    <img src="library/img/ds/module 1/DS M1.3-05.jpg " class="mx-auto d-block img-fluid"><br><br>
+                    <img src="library/img/ds/module 1/DS M1.3-06.jpg " class="mx-auto d-block img-fluid"><br><br>
+                    <img src="library/img/ds/module 1/DS M1.3-07.jpg " class="mx-auto d-block img-fluid"><br><br>
+                    <img src="library/img/ds/module 1/DS M1.3-08.jpg " class="mx-auto d-block img-fluid"><br><br>
+                    <img src="library/img/ds/module 1/DS M1.3-09.jpg " class="mx-auto d-block img-fluid"><br><br>
+                    <img src="library/img/ds/module 1/DS M1.3-10.jpg " class="mx-auto d-block img-fluid"><br><br>
+                    <img src="library/img/ds/module 1/DS M1.3-11.jpg " class="mx-auto d-block img-fluid"><br><br>
+                    <img src="library/img/ds/module 1/DS M1.3-12.jpg " class="mx-auto d-block img-fluid"><br><br>
+                    <img src="library/img/ds/module 1/DS M1.3-13.jpg " class="mx-auto d-block img-fluid"><br><br>
+                    <img src="library/img/ds/module 1/DS M1.3-14.jpg " class="mx-auto d-block img-fluid"><br><br>
+
+
+                </div>
+                <br>
+            </div>
+        </div>
+        </div>
+    </section><br><br>
+
+    <footer>
+
+    </footer>
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+    <script src="library/js/javascript.js"></script>
+</body>
+
+</html>

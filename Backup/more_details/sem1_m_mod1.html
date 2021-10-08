@@ -1,0 +1,624 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maths</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link href="library/css/style.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <button onclick="openNav()" id="myBtn" title="Go to top">
+        <i class="fa fa-align-justify"></i>
+    </button>
+
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="../index.html">MAIN</a>
+        <a href="#carouselExampleSlidesOnly">HOME</a>
+        <a href="#module1">Module I</a>
+        <a href="sem1_m_mod2.html">Module II</a>
+        <a href="sem1_m_mod3.html">Module III</a>
+        <a href="sem1_m_mod4.html">Module IV</a>
+        <a href="sem1_m_mod5.html">Module V</a>
+    </div>
+
+    <!-- Use any element to open the sidenav -->
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="d-block w-100" src="library/img/sem1_mat.jpg" alt="First slide">
+            </div>
+        </div>
+    </div>
+
+    <section id="module1">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12 mt-5">
+                    <h2 class="text-center">MODULE I</h2>
+                    <svg height="50" width="100%">
+                        <line x1="0" y1="0" x2="100%" y2="0" style="stroke:rgb(255,0,0);stroke-width:3" />
+                    </svg><br>
+
+                    <b class="red r4-h2 text-center" style="display: block;">............. SETS .............
+                    </b><br><br>
+
+                    collection of well defined and distinct objects, considered as an object in its own right<br><br>
+
+                    N : the set of all natural numbers<br>
+                    Z : the set of all integers<br>
+                    Q : the set of all rational numbers<br>
+                    R : the set of real numbers<br>
+                    Z+: the set of positive integers<br>
+                    Q+: the set of positive rational numbers<br>
+                    R+: the set of positive real numbers<br><br>
+
+                    (i) Objects, elements and members of a set are synonymous terms.<br>
+                    (ii) Sets are usually denoted by capital letters A, B, C, X, Y, Z, etc.<br>
+                    (iii) The elements of a set are represented by small letters a, b, c, x, y, z, etc.<br><br>
+
+                    <b class="red r4-h2">Representing a set </b><br><br>
+
+                    (i) Roster or tabular form<br>
+                    (ii) Set-builder form.<br><br>
+
+                    <img src="library/img/m1_s1.png" class="mx-auto d-block img-fluid"><br>
+
+
+                    example <br>
+
+                    <img src="library/img/m2.png" class="mx-auto d-block img-fluid"><br><br>
+
+
+                    <b class="red r4-h2">Empty set / Null set / Void set</b><br><br>
+
+                    B = { x : x is a student presently studying in both Classes X and XI }<br>
+                    In mathematics, the empty set is the unique set having no elements; <br>
+                    its size or cardinality (count of elements in a set) is zero. <br>
+
+                    Some axiomatic set theories ensure that the empty set exists by including an axiom of empty set,<br>
+                    while in other theories, its existence can be deduced.<br>
+                    empty set is denoted by the symbol φ or { }<br><br>
+
+
+                    <b class="red r4-h2">Finite and Infinite Sets</b><br><br>
+
+                    A = {1, 2, 3, 4, 5}<br>
+                    C = { men living presently in different parts of the world}<br>
+                    A set which is empty or consists of a definite number of elements is called finite <br>
+                    Otherwise, the set is called infinite. <br><br>
+
+
+                    <b class="red r4-h2">Equal Sets</b><br><br>
+
+                    Let A = {1, 2, 3, 4} and B = {3, 1, 4, 2}. Then A = B<br>
+
+                    sets A = {1, 2, 3} and B = {2, 2, 1, 3, 3} are equal<br><br>
+
+                    <b class="red r4-h2">Subsets</b><br><br>
+                    A set A is said to be a subset of a set B if every element of A is also an element of B<br>
+                    A ⊂ B if a ∈ A ⇒ a ∈ B<br><br>
+
+
+                    example<br><br>
+
+
+                    <img src="library/img/m3.png" class="mx-auto d-block img-fluid"><br><br>
+
+
+                    <b class="red r4-h2">Subsets of set of real numbers</b><br><br>
+
+                    <img src="library/img/m4.png" class="mx-auto d-block img-fluid"><br>
+
+                    <img src="library/img/m5.png" class="mx-auto d-block img-fluid"><br>
+
+                    <img src="library/img/m6.png" class="mx-auto d-block img-fluid"><br><br>
+
+
+                    <b class="red r4-h2">Power Set</b><br><br>
+
+                    The collection of all subsets of a set A is called the power set of A <br>
+                    It is denoted by P(A). In P(A), every element is a set<br>
+                    P( A ) = { φ,{ 1 }, { 2 }, { 1,2 }}<br><br>
+
+
+                    <b class="red r4-h2">Universal Set</b><br><br>
+
+                    <img src="library/img/m7.png" class="mx-auto d-block img-fluid"><br><br>
+
+                    <b class="red r4-h2">Venn Diagrams</b><br><br>
+
+                    <img src="library/img/m8.png" class="mx-auto d-block img-fluid"><br>
+
+                    <b class="red r4-h2">Operations on Sets</b><br><br>
+
+                    Union of sets<br>
+                    A ∪ B and usually read as ‘A union B’ <br>
+                    Intersection of sets <br>
+                    A ∩ B = {x : x ∈ A and x ∈ B}<br>
+                    Difference of sets<br>
+                    A – B and read as“ A minus B”<br><br>
+
+                    <b class="red r4-h2">Union of sets</b><br>
+                    <br>
+                    (i) A ∪ B = B ∪ A (Commutative law)<br>
+                    (ii) ( A ∪ B ) ∪ C = A ∪ ( B ∪ C) (Associative law )<br>
+                    (iii) A ∪ φ = A (Law of identity element, φ is the identity of ∪)<br>
+                    (iv) A ∪ A = A (Idempotent law)<br>
+                    (v) U ∪ A = U (Law of U)<br><br>
+
+                    <img src="library/img/m9.png" class="mx-auto d-block img-fluid"><br><br>
+
+                    <b class="red r4-h2">Intersection of sets</b><br><br>
+
+                    (i) A ∩ B = B ∩ A (Commutative law).<br>
+                    (ii) ( A ∩ B ) ∩ C = A ∩ ( B ∩ C ) (Associative law).<br>
+                    (iii) φ ∩ A = φ, U ∩ A = A (Law of φ and U).<br>
+                    (iv) A ∩ A = A (Idempotent law)<br>
+                    (v) A ∩ ( B ∪ C ) = ( A ∩ B ) ∪ ( A ∩ C ) (Distributive law ) i. e.,<br>
+                    ∩ distributes over ∪<br><br>
+
+                    <img src="library/img/m10.png" class="mx-auto d-block img-fluid"><br>
+
+                    <b class="red r4-h2">Difference of sets</b><br><br>
+
+                    A – B = { x : x ∈ A and x ∉ B }<br>
+
+                    <img src="library/img/m11.jpg" class="mx-auto d-block img-fluid"><br>
+
+                    <b class="red r4-h2">Complement of a Set</b><br><br>
+
+                    Let U be the universal set and A a subset of U. Then the complement of A is the set of all elements
+                    of U which are not the elements of A.
+                    Symbolically, we write A′ to denote the complement of A with respect to U. Thus,<br><br>
+                    A′ = {x : x ∈ U and x ∉ A }. Obviously A′ = U – A<br>
+
+                    <img src="library/img/m12.png" class="mx-auto d-block img-fluid"><br><br>
+
+                    <b class="red r4-h2">Properties of Complement Sets</b><br><br>
+
+                    1. Complement laws: (i) A ∪ A′ = U (ii) A ∩ A′ = φ<br>
+                    2. De Morgan’s law: (i) (A ∪ B)´ = A′ ∩ B′ (ii) (A ∩ B)′ = A′ ∪ B′<br>
+                    3. Law of double complementation : (A′)′ = A<br>
+                    4. Laws of empty set and universal set φ′ = U and U′ = φ<br><br><br>
+
+
+                    <b class="red r4-h2 text-center" style="display: block;">... RELATIONS AND FUNCTIONS ...</b><br><br>
+                    <b class="red r4-h2">Cartesian Products of Sets</b><br><br>
+
+                    <p>
+                        Given two non-empty sets P and Q. The cartesian product P × Q is the set of all ordered pairs of
+                        elements from P and Q, i.e.,
+                        <br> P × Q = { (p,q) : p ∈ P, q ∈ Q } <br><br>
+                        eg : A= {a1, a2} and B = {b1, b2, b3, b4} <br>
+                        then<br>
+                        A × B = {( a1, b1), (a1, b2), (a1, b3), (a1, b4), (a2, b1), (a2, b2), (a2, b3), (a2, b4)}
+                    </p>
+                    <p>
+                        <b>Remarks </b><br>
+
+                        (i) Two ordered pairs are equal, if and only if the corresponding first elements are equal and
+                        the second elements are also equal<br>
+                        (ii) If there are p elements in A and q elements in B, then there will be pq elements in A × B,
+                        i.e., if n(A) = p and n(B) = q, then n(A × B) = pq.<br> (iii) If A and B are non-empty sets and
+                        either A or B is an infinite set, then so is A × B.<br> (iv) A × A × A = {(a, b, c) : a, b, c ∈
+                        A}.
+                        Here (a, b, c) is called an ordered triplet.
+                    </p>
+
+                    <br>
+                    <div class="table-responsive">
+                        <table class="mx-auto">
+                            <tbody>
+                                <tr>
+                                    <th>Relations </th>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        A relation R from a non-empty set A to a non-empty set B is a <b> subset of the
+                                            cartesian product A
+                                            × B.</b>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td> The subset is derived by describing a relationship between the first
+                                        element and the second
+                                        element of the ordered pairs in A × B. The second element is called the <b>image
+                                        </b> of
+                                        the first
+                                        element. </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        The set of all first elements of the ordered pairs in a relation R from a set A
+                                        to a set B is
+                                        called the <b>domain </b> of the relation R.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        The set of all second elements in a relation R from a set A to a set B is called
+                                        the <b>range </b> of the relation R. The whole set B is called the <b>codomain
+                                        </b> of the
+                                        relation R. Note that range ⊂ codomain
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div><br><br>
+
+
+                    <div class="table-responsive">
+                        <table class="mx-auto">
+                            <tbody>
+                                <tr>
+                                    <th colspan="2">Operations in Relation </th>
+                                </tr>
+                                <tr>
+                                    <td>intersection </td>
+                                    <td>R
+                                        ∩
+                                        S
+                                        =
+                                        {
+                                        (
+                                        a
+                                        ,
+                                        b
+                                        )
+                                        ∣
+                                        a
+                                        R
+                                        b
+                                        and
+                                        a
+                                        S
+                                        b
+                                        }
+                                        ,
+                                        <br>
+                                        where
+                                        a
+                                        ∈
+                                        A
+                                        and
+                                        b
+                                        ∈
+                                        B
+                                        . </td>
+                                </tr>
+                                <tr>
+                                    <td>Union </td>
+                                    <td>R
+                                        ∪
+                                        S
+                                        =
+                                        {
+                                        (
+                                        a
+                                        ,
+                                        b
+                                        )
+                                        ∣
+                                        a
+                                        R
+                                        b
+                                        or
+                                        a
+                                        S
+                                        b
+                                        }
+                                        ,
+                                        <br>
+                                        provided
+                                        a
+                                        ∈
+                                        A
+                                        and
+                                        b
+                                        ∈
+                                        B
+                                        . </td>
+                                </tr>
+                                <tr>
+                                    <td>Difference </td>
+                                    <td>R
+                                        ∖
+                                        S
+                                        =
+                                        {
+                                        (
+                                        a
+                                        ,
+                                        b
+                                        )
+                                        ∣
+                                        a
+                                        R
+                                        b
+                                        and not
+                                        a
+                                        S
+                                        b
+                                        }
+                                        ,
+                                        <br>
+                                        S
+                                        ∖
+                                        R
+                                        =
+                                        {
+                                        (
+                                        a
+                                        ,
+                                        b
+                                        )
+                                        ∣
+                                        a
+                                        S
+                                        b
+                                        and not
+                                        a
+                                        R
+                                        b
+                                        } </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div><br><br>
+
+                    <div class="table-responsive">
+                        <table class="mx-auto">
+                            <tbody>
+                                <tr>
+                                    <th> Functions </th>
+                                </tr>
+                                <tr>
+                                    <td> special type of relation called function </td>
+                                </tr>
+                                <tr>
+                                    <td> A relation f from a set A to a set B is said to be a function if every element
+                                        of set A has one and only one image in set B. </td>
+                                </tr>
+                                <tr>
+                                    <td>In other words, a function f is a relation from a non-empty set A to a non-empty
+                                        set B such that the domain of f is A and no two distinct ordered pairs in f have
+                                        the same first element. </td>
+                                </tr>
+                                <tr>
+                                    <td>If f is a function from A to B and (a, b) ∈ f, then f (a) = b, where b is called
+                                        the image of a under f and a is called the preimage of b under f. </td>
+                                </tr>
+                                <tr>
+                                    <td>The function f from A to B is denoted by f: A à B. </td>
+                                </tr>
+                                <tr>
+                                    <td>eg : Let N be the set of natural numbers and the relation R be defined on N such
+                                        that R = {(x, y) : y = 2x, x, y ∈ N} </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div><br><br>
+
+                    <div class="table-responsive">
+                        <table class="mx-auto">
+                            <tbody>
+                                <tr>
+                                    <th>Relations Types </th>
+                                    <th>Definitions </th>
+                                </tr>
+                                <tr>
+                                    <td>EMPTY </td>
+                                    <td>If no element of set X is related or mapped to any element of X, then the
+                                        relation R in A is an empty relation, i.e, R = Φ. <BR><BR> Think of an example
+                                        of set A
+                                        consisting of only 100 hens in a poultry farm. Is there any possibility of
+                                        finding a relation R of getting any elephant in the farm? No! R is a void or
+                                        empty relation since there are only 100 hens and no elephant. </td>
+                                </tr>
+                                <tr>
+                                    <td>UNIVERSAL </td>
+                                    <td>A relation R in a set, say A is a universal relation if each element of A is
+                                        related to every element of A, i.e., R = A × A. Also called Full relation.
+                                        <BR><BR>
+                                        Suppose A is a set of all natural numbers and B is a set of all whole numbers.
+                                        The relation between A and B is universal as every element of A is in set B.
+                                        Empty relation and Universal relation are sometimes called trivial relation.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>IDENTITY </td>
+                                    <td>In Identity relation, every element of set A is related to itself only. I = {(a,
+                                        a), ∈ A}.<BR><BR> For example, If we throw two dice, we get 36 possible
+                                        outcomes, (1,
+                                        1), (1, 2), … , (6, 6). If we define a relation as R: {(1, 1), (2, 2), (3, 3),
+                                        (4, 4), (5, 5), (6, 6)}, it is an identity relation. </td>
+                                </tr>
+                                <tr>
+                                    <td>INVERSE </td>
+                                    <td>Let R be a relation from set A to set B i.e., R ∈ A × B. The relation R-1 is
+                                        said to be an Inverse relation if R-1 from set B to A is denoted by R-1 = {(b,
+                                        a): (a, b) ∈ R}.<BR><BR> Considering the case of throwing of two dice if R =
+                                        {(1, 2),
+                                        (2, 3)}, R-1 = {(2, 1), (3, 2)}. Here, the domain of R is the range of R-1 and
+                                        vice-versa. </td>
+                                </tr>
+                                <tr>
+                                    <td>REFLEXIVE </td>
+                                    <td>If every element of set A maps to itself, the relation is Reflexive Relation.
+                                        For every a ∈ A, (a, a) ∈ R. </td>
+                                </tr>
+                                <tr>
+                                    <td>IRREFLEXIVE </td>
+                                    <td>Relation R on a set A is irreflexive if (a,a) not element of R for all a ∈ A
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td> </td>
+                                    <td><mark>A relation can be reflexive or irreflexive or neither </mark> </td>
+                                </tr>
+                                <tr>
+                                    <td>SYMMETRIC </td>
+                                    <td>A relation R on a set A is said to be symmetric if (a, b) ∈ R then (b, a) ∈ R,
+                                        for all a & b ∈ A. </td>
+                                </tr>
+                                <tr>
+                                    <td>ANTI-SYMMETRIC </td>
+                                    <td>R is ANTI-SYMMETRIC if xRY & yRx implies x=y <br> for all x,y ∈ A , <br>ie if
+                                        xRy then y(not)Rx for all pairs where there is a relation </td>
+                                </tr>
+                                <tr>
+                                    <td> </td>
+                                    <td><mark>A relation can be symmetric or antisymmetric or neither </mark> </td>
+                                </tr>
+                                <tr>
+                                    <td>TRANSITIVE </td>
+                                    <td>A relation in a set A is transitive if, (a, b) ∈ R, (b, c) ∈ R, then (a, c) ∈ R,
+                                        for all a, b, c ∈ A </td>
+                                </tr>
+                                <tr>
+                                    <td>EQUIVALENCE </td>
+                                    <td>A relation is said to be equivalence if and only if it is Reflexive, Symmetric,
+                                        and Transitive. For example, if we throw two dices A & B and note down all the
+                                        possible outcome. </td>
+                                </tr>
+                                <tr>
+                                    <td>PARTIAL ORDER </td>
+                                    <td>A relation R on set A is called a partial ordering or partial order if it is
+                                        reflexive, anti-symmetric and transitive. A set A together with a partial
+                                        ordering R is called a partially ordered set or poset. The poset is denoted as
+                                        (S,R). </td>
+                                </tr>
+                                <tr>
+                                    <td>VOID </td>
+                                    <td>We can define void relation as a relation R in a set A, where no element of set
+                                        A is related to any element of A. So, R = ɸ which is a subset of A × A. </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div><br><br>
+                    <p>
+                        <b class="red"> Q :</b> <b> Are all functions relations? </b><br>
+                        A function is a kind of interrelationship among objects. Moreover, a function defines a set of
+                        finite lists of objects, one for each combination of possible arguments. Besides, a relation is
+                        another kind of interrelationship among object in the world of discourse. Furthermore, both
+                        function and relation are defined as a set of lists. And
+                        <mark>every function is a relation but not
+                            every relation is a function. </mark>
+                    </p><br>
+                    <b class="red r4-h2">Matrix Representatoin of relations </b><br>
+                    <p> x Relation as Matrices:
+                        A relation R is defined as from set A to set B,then the matrix representation of relation is
+                        <br>
+                        MR=
+                        [m<sub>ij </sub>] <br>where
+                        <br>
+                        m<sub>ij</sub> = { 1, if (a,b) Є R;
+
+                        0, if (a,b) Є R }<br>
+                    </p>
+                    <img src="library/img/matrix_rel.png" class="mx-auto d-block img-fluid"><br><br>
+
+
+
+
+
+
+
+
+                    <br><br><b class="red r4-h2">Composition </b><br>
+
+                    Let R be a relation from A to B and S be a relation from B to C, then the composite of R and S,
+                    denoted by S o R, is the relation consisting of ordered pairs (a,c) where a &isin; A, c &isin; C and
+                    for which there exists an element b &isin; B such that (a, b) &isin; R and (b, c) &isin; S.
+
+                    <br><br>
+                    example<br><br>
+                    <p> Let X = {4, 5, 6}, Y = {a, b, c} and Z = {l, m, n}. Consider the relation R1 from X to Y and R2
+                        from Y to Z <br> then .. </p>
+                    <p> R1 = {(4, a), (4, b), (5, c), (6, a), (6, c)}<br>
+                        R2 = {(a, l), (a, n), (b, l), (b, m), (c, l), (c, m), (c, n)}</p>
+
+
+
+                    <img src="library/img/set_maths_sem1_1.png" class="mx-auto d-block img-fluid"><br><br>
+                    (i) The composition relation R1 o R2 as shown in fig:<br><br>
+                    <img src="library/img/set_maths_sem1 (2).png" class="mx-auto d-block img-fluid"><br><br>
+                    R1 o R2 = {(4, l), (4, n), (4, m), (5, l), (5, m), (5, n), (6, l), (6, m), (6, n)}
+                    <br><br><br>
+                    <img src="library/img/maths_1/eqi-1.jpg" class="mx-auto d-block img-fluid"><br><br>
+                    <img src="library/img/maths_1/eqi-2.jpg" class="mx-auto d-block img-fluid"><br><br>
+                    <img src="library/img/maths_1/eqi-3.jpg" class="mx-auto d-block img-fluid"><br><br>
+                    <img src="library/img/maths_1/eqi-4.jpg" class="mx-auto d-block img-fluid"><br><br>
+
+
+                    <b class="red r4-h2">Notes </b><br>
+
+                    <img src="library/img/maths_1/maths-01.jpg" class="mx-auto d-block img-fluid"><br><br>
+                    <img src="library/img/maths_1/maths-02.jpg" class="mx-auto d-block img-fluid"><br><br>
+                    <img src="library/img/maths_1/maths-03.jpg" class="mx-auto d-block img-fluid"><br><br>
+                    <img src="library/img/maths_1/maths-04.jpg" class="mx-auto d-block img-fluid"><br><br>
+                    <img src="library/img/maths_1/maths-05.jpg" class="mx-auto d-block img-fluid"><br><br>
+                    <img src="library/img/maths_1/maths-06.jpg" class="mx-auto d-block img-fluid"><br><br>
+                    <img src="library/img/maths_1/maths-07.jpg" class="mx-auto d-block img-fluid"><br><br>
+                    <img src="library/img/maths_1/maths-08.jpg" class="mx-auto d-block img-fluid"><br><br>
+                    <img src="library/img/maths_1/maths-09.jpg" class="mx-auto d-block img-fluid"><br><br>
+                    <img src="library/img/maths_1/maths-10.jpg" class="mx-auto d-block img-fluid"><br><br>
+                    <img src="library/img/maths_1/maths-11.jpg" class="mx-auto d-block img-fluid"><br><br>
+                    <img src="library/img/maths_1/maths-12.jpg" class="mx-auto d-block img-fluid"><br><br>
+                    <img src="library/img/maths_1/maths-13.jpg" class="mx-auto d-block img-fluid"><br><br>
+                    <img src="library/img/maths_1/maths-14.jpg" class="mx-auto d-block img-fluid"><br><br>
+                    <img src="library/img/maths_1/maths-15.jpg" class="mx-auto d-block img-fluid"><br><br>
+                    <img src="library/img/maths_1/maths-16.jpg" class="mx-auto d-block img-fluid"><br><br>
+
+                    <img src="library/img/mahs/maths_3_-1.jpg" class="mx-auto d-block img-fluid"><br><br>
+                    <img src="library/img/mahs/maths_3_-2.jpg" class="mx-auto d-block img-fluid"><br><br>
+                    <img src="library/img/mahs/maths_3_-3.jpg" class="mx-auto d-block img-fluid"><br><br>
+                    <img src="library/img/mahs/maths_3_-4.jpg" class="mx-auto d-block img-fluid"><br><br>
+                    <img src="library/img/mahs/maths_3_-5.jpg" class="mx-auto d-block img-fluid"><br><br>
+                    <img src="library/img/mahs/maths_3_-6.jpg" class="mx-auto d-block img-fluid"><br><br>
+                    <img src="library/img/mahs/maths_3_-7.jpg" class="mx-auto d-block img-fluid"><br><br>
+                    <img src="library/img/mahs/maths_3_-8.jpg" class="mx-auto d-block img-fluid"><br><br>
+
+                    <img src="library/img/maths_1/maths4-matrix-1.jpg" class="mx-auto d-block img-fluid"><br><br>
+                    <img src="library/img/maths_1/maths4-matrix-2.jpg" class="mx-auto d-block img-fluid"><br><br>
+
+                    <img src="library/img/mahs/maths_2_aiswariya-01.jpg" class="mx-auto d-block img-fluid"><br><br>
+                    <img src="library/img/mahs/maths_2_aiswariya-02.jpg" class="mx-auto d-block img-fluid"><br><br>
+                    <img src="library/img/mahs/maths_2_aiswariya-03.jpg" class="mx-auto d-block img-fluid"><br><br>
+                    <img src="library/img/mahs/maths_2_aiswariya-04.jpg" class="mx-auto d-block img-fluid"><br><br>
+                    <img src="library/img/mahs/maths_2_aiswariya-05.jpg" class="mx-auto d-block img-fluid"><br><br>
+                    <img src="library/img/mahs/maths_2_aiswariya-06.jpg" class="mx-auto d-block img-fluid"><br><br>
+                    <img src="library/img/mahs/maths_2_aiswariya-07.jpg" class="mx-auto d-block img-fluid"><br><br>
+                    <img src="library/img/mahs/maths_2_aiswariya-08.jpg" class="mx-auto d-block img-fluid"><br><br>
+                    <img src="library/img/mahs/maths_2_aiswariya-09.jpg" class="mx-auto d-block img-fluid"><br><br>
+
+
+                </div>
+            </div>
+        </div>
+    </section><br><br>
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+    <script src="library/js/javascript.js"></script>
+</body>
+
+</html>
